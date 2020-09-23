@@ -2,314 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cdfb5c8-677c-484e-acbf-cc86caf25c15" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/Iq_pr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/LBNL_logo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/Pr_T7_changes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/SAXS_equation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/SAX_exposure.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/SAXed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/bioisis.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/buffer_blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/buffer_subtraction_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/collection_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/collection_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/contrast_variation.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/cyan_gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/dammin_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/dammin_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/dammin_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/data_collection_review.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/data_evaluation_review.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/derivative_u.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/feed-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/file_tab_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/file_tab_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/final_u_3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/flexibility_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/flexibility_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/flexibility_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/flexibility_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/gpa_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/gpa_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/gpa_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/gpa_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/guinier_correct.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/guinier_correct_2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/guinier_equation.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/guinier_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/guinier_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/guinier_incorrect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/information_theory_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/information_theory_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_guinier_equation.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/kratky_review.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/low_res_thumbnail.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/low_res_thumbnail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/mclaurin_series.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/merging_figure_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/misc_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/misc_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/normal_kratky_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/normal_kratky_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/normal_kratky_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_1a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_5a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_figure_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_pdb_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_pdb_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_pdb_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_pdb_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/pr_review.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_edited_data.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_guinier_incorrect.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_merge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_merged.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_start.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_tools.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_unedited_cut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/primus_unedited_data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/protein_mass_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/protein_mass_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/purple_gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ratio_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ratio_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ratio_figure_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rc_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rc_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rc_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rc_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/rect3691.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/red_gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/redsphere.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/redsphere_shadow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/reply_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sample_prep_IofQ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/saving_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/scaling_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/scaling_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/scaling_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/scaling_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/scatter_directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_6a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/sec_figure_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/small_circle.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/solve_for_zero.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/spinner_black.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/spinner_bounce.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/substitution.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/substitution1a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/substitution2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/substitution3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/substitution4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/subtraction_fig_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/subtraction_fig_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/subtraction_fig_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/subtraction_fig_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/subtraction_fig_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/subtraction_fig_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/table_organization.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/u_substituted.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/vc_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/vc_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/volume_exponent_figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/volume_exponent_figure_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/volume_exponent_figure_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/volume_exponent_figure_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/yellow_gradient.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/blob_validator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/download.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/edit_experiment_details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/edit_submission.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/file_upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/review_submission.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/data_file_loader.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/data_to_plot.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/pofr_data.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/sas_cif.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/scatter_data.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/data_validator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/real_data_validator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/contributor.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/about/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/about/_right_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/about/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/_update_errors.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/_uploaded_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/add_or_edit_supporting_archive.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/create.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/errors.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/remove.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/archive/update.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/_comment_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/remove_comment.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/update.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_associated_real_space_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_associated_reciprocal_space_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_left_side_review_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_upload_real_space_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_uploaded_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_view_dat_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_view_data_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/_view_sec_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/add_datafile.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/add_or_edit_data_set.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/add_real_space_file.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/errors.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/remove_file.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/update.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/upload_data_file.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/upload_real_space_file.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/view.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/view_data_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/data_set/view_data_file.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_added_contributor.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_admin_left_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_data_set.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_double_log_axis.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_edit_errors.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_form_contributors.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_has_publication.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_kratky_plot.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_left_side_edit_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_mini_scatter_plot.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_no_publication.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_normal_axis.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_potential_contributor.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_publication.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_publication_fields.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_qIq_plot.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_right_side_list_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_right_side_show_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/_sec.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/add_contributor.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/add_figure.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/admin_list.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/publication.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/remove_contributor.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/update.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/experiments/upload_figure.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_head.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/_right_side_edit_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/_right_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/articles.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/general_info.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/reviews.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/news/updates.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/notifier_mailer/registration.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/notifier_mailer/registration.text.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/notifier_mailer/save_and_exit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/notifier_mailer/save_and_exit.text.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/real_space_files/_errors.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/real_space_files/_pr_file.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/real_space_files/errors.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/real_space_files/remove_real_space_file.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/real_space_files/view_pr.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/scatters/_download_link.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/scatters/errors.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/scatters/get_download.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/scatters/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/scatters/request_download.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_approval_link.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_create_bioisis_id.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_errors.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_left_edit_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_left_edit_reviewer_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_right_edit_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_submit_review_link.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/_view_archive.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/add_comment.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/approve.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/bid_lookup.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/commented.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/completed.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/pending.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/remove_comment.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/review.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/save_and_exit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/submission_error.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/submission_errors.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/submissions/view_archive.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_about_scatter.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_buffer_subtraction.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_collection.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_cross_section.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_damminf_runs.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_data_quality.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_deposit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_distribution.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_flexibility_analysis.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_gpa.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_guinier.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_guinier_derivation.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_information_content.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_kratky.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_loading_files.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_merging.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_normal_kratky.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_plot_settings.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_pr_pdb_calculation.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_pr_tutorial.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_prep.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_protein_rna_mass.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_ratio.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_saving_files.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_scaling.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_sec_saxs.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_subtraction.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_volume_correlation.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/_volume_exponent.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tutorials/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/user_admin/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/welcome/_left_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/welcome/_right_side_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/extensions.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/pagy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data_file_loader.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data_file_methods.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/setup_mail.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -744,7 +438,7 @@
       <workItem from="1600280975893" duration="23474000" />
       <workItem from="1600425216012" duration="66188000" />
       <workItem from="1600758947714" duration="8972000" />
-      <workItem from="1600774309565" duration="4752000" />
+      <workItem from="1600774309565" duration="6619000" />
     </task>
     <servers />
   </component>
@@ -765,8 +459,16 @@
       <screen x="0" y="23" width="1440" height="840" />
     </state>
     <state x="299" y="23" width="825" height="840" key="CommitChangelistDialog2/0.23.1440.840@0.23.1440.840" timestamp="1595204855251" />
-    <state width="1090" height="263" key="GridCell.Tab.0.bottom" timestamp="1600771312358">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state x="578" y="304" key="Github.ShareDialog" timestamp="1600819163487">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="578" y="304" key="Github.ShareDialog/0.23.1440.838@0.23.1440.838" timestamp="1600819163487" />
+    <state x="385" y="105" key="Github.UntrackedFilesDialog" timestamp="1600819303942">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="385" y="105" key="Github.UntrackedFilesDialog/0.23.1440.838@0.23.1440.838" timestamp="1600819303942" />
+    <state width="665" height="263" key="GridCell.Tab.0.bottom" timestamp="1600850534578">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1093" height="183" key="GridCell.Tab.0.bottom/0.0.1440.860/1440.0.1366.768@1440.0.1366.768" timestamp="1600676378179" />
     <state width="1324" height="207" key="GridCell.Tab.0.bottom/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641074" />
@@ -783,6 +485,7 @@
     <state width="1278" height="239" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1596982849807" />
     <state width="1495" height="242" key="GridCell.Tab.0.bottom/0.23.1440.834/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1599124875032" />
     <state width="1278" height="239" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1597013593674" />
+    <state width="665" height="263" key="GridCell.Tab.0.bottom/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850534578" />
     <state width="1398" height="183" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1600462415371" />
     <state width="1712" height="562" key="GridCell.Tab.0.bottom/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720377" />
     <state width="1368" height="183" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1600553933338" />
@@ -836,8 +539,8 @@
     <state width="1260" height="247" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598456785311" />
     <state width="1260" height="247" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598456304004" />
     <state width="1260" height="247" key="GridCell.Tab.0.bottom/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567607" />
-    <state width="1090" height="263" key="GridCell.Tab.0.center" timestamp="1600771312357">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.0.center" timestamp="1600850534577">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1093" height="183" key="GridCell.Tab.0.center/0.0.1440.860/1440.0.1366.768@1440.0.1366.768" timestamp="1600676378177" />
     <state width="1324" height="207" key="GridCell.Tab.0.center/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641073" />
@@ -854,6 +557,7 @@
     <state width="1278" height="239" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1596982849806" />
     <state width="1495" height="242" key="GridCell.Tab.0.center/0.23.1440.834/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1599124875030" />
     <state width="1278" height="239" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1597013593672" />
+    <state width="665" height="263" key="GridCell.Tab.0.center/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850534577" />
     <state width="1398" height="183" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1600462415370" />
     <state width="1712" height="562" key="GridCell.Tab.0.center/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720375" />
     <state width="1368" height="183" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1600553933337" />
@@ -907,8 +611,8 @@
     <state width="1260" height="247" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598456785310" />
     <state width="1260" height="247" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598456304001" />
     <state width="1260" height="247" key="GridCell.Tab.0.center/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567606" />
-    <state width="1090" height="263" key="GridCell.Tab.0.left" timestamp="1600771312356">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.0.left" timestamp="1600850534576">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1093" height="183" key="GridCell.Tab.0.left/0.0.1440.860/1440.0.1366.768@1440.0.1366.768" timestamp="1600676378176" />
     <state width="1324" height="207" key="GridCell.Tab.0.left/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641072" />
@@ -925,6 +629,7 @@
     <state width="1278" height="239" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1596982849806" />
     <state width="1495" height="242" key="GridCell.Tab.0.left/0.23.1440.834/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1599124875030" />
     <state width="1278" height="239" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1597013593672" />
+    <state width="665" height="263" key="GridCell.Tab.0.left/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850534576" />
     <state width="1398" height="183" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1600462415369" />
     <state width="1712" height="562" key="GridCell.Tab.0.left/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720374" />
     <state width="1368" height="183" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1600553933337" />
@@ -978,8 +683,8 @@
     <state width="1260" height="247" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598456785308" />
     <state width="1260" height="247" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598456304000" />
     <state width="1260" height="247" key="GridCell.Tab.0.left/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567606" />
-    <state width="1090" height="263" key="GridCell.Tab.0.right" timestamp="1600771312358">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.0.right" timestamp="1600850534577">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1093" height="183" key="GridCell.Tab.0.right/0.0.1440.860/1440.0.1366.768@1440.0.1366.768" timestamp="1600676378178" />
     <state width="1324" height="207" key="GridCell.Tab.0.right/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641074" />
@@ -996,6 +701,7 @@
     <state width="1278" height="239" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1596982849806" />
     <state width="1495" height="242" key="GridCell.Tab.0.right/0.23.1440.834/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1599124875032" />
     <state width="1278" height="239" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1597013593673" />
+    <state width="665" height="263" key="GridCell.Tab.0.right/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850534577" />
     <state width="1398" height="183" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1600462415370" />
     <state width="1712" height="562" key="GridCell.Tab.0.right/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720376" />
     <state width="1368" height="183" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1600553933338" />
@@ -1049,8 +755,8 @@
     <state width="1260" height="247" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598456785310" />
     <state width="1260" height="247" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598456304002" />
     <state width="1260" height="247" key="GridCell.Tab.0.right/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567607" />
-    <state width="1090" height="263" key="GridCell.Tab.1.bottom" timestamp="1600771312252">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.1.bottom" timestamp="1600850390200">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1324" height="207" key="GridCell.Tab.1.bottom/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641077" />
     <state width="1324" height="207" key="GridCell.Tab.1.bottom/0.0.1440.864/1440.0.1366.768@1440.0.1366.768" timestamp="1600086337757" />
@@ -1061,6 +767,7 @@
     <state width="1398" height="242" key="GridCell.Tab.1.bottom/0.23.1440.832@0.23.1440.832" timestamp="1599090916976" />
     <state width="1278" height="239" key="GridCell.Tab.1.bottom/0.23.1440.833@0.23.1440.833" timestamp="1596982849808" />
     <state width="1278" height="239" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1597013012066" />
+    <state width="665" height="263" key="GridCell.Tab.1.bottom/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850390200" />
     <state width="978" height="241" key="GridCell.Tab.1.bottom/0.23.1440.835@0.23.1440.835" timestamp="1594602050230" />
     <state width="1712" height="562" key="GridCell.Tab.1.bottom/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720380" />
     <state width="1398" height="205" key="GridCell.Tab.1.bottom/0.23.1440.836@0.23.1440.836" timestamp="1599343189043" />
@@ -1111,8 +818,8 @@
     <state width="1260" height="247" key="GridCell.Tab.1.bottom/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598438052658" />
     <state width="1260" height="213" key="GridCell.Tab.1.bottom/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598281309560" />
     <state width="1260" height="247" key="GridCell.Tab.1.bottom/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567610" />
-    <state width="1090" height="263" key="GridCell.Tab.1.center" timestamp="1600771312251">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.1.center" timestamp="1600850390199">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1324" height="207" key="GridCell.Tab.1.center/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641076" />
     <state width="1324" height="207" key="GridCell.Tab.1.center/0.0.1440.864/1440.0.1366.768@1440.0.1366.768" timestamp="1600086337756" />
@@ -1123,6 +830,7 @@
     <state width="1398" height="242" key="GridCell.Tab.1.center/0.23.1440.832@0.23.1440.832" timestamp="1599090916975" />
     <state width="1278" height="239" key="GridCell.Tab.1.center/0.23.1440.833@0.23.1440.833" timestamp="1596982849807" />
     <state width="1278" height="239" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1597013012066" />
+    <state width="665" height="263" key="GridCell.Tab.1.center/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850390199" />
     <state width="978" height="241" key="GridCell.Tab.1.center/0.23.1440.835@0.23.1440.835" timestamp="1594602050229" />
     <state width="1712" height="562" key="GridCell.Tab.1.center/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720378" />
     <state width="1398" height="205" key="GridCell.Tab.1.center/0.23.1440.836@0.23.1440.836" timestamp="1599343189041" />
@@ -1173,8 +881,8 @@
     <state width="1260" height="247" key="GridCell.Tab.1.center/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598438052657" />
     <state width="1260" height="213" key="GridCell.Tab.1.center/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598281309560" />
     <state width="1260" height="247" key="GridCell.Tab.1.center/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567609" />
-    <state width="1090" height="263" key="GridCell.Tab.1.left" timestamp="1600771312251">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.1.left" timestamp="1600850390199">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1324" height="207" key="GridCell.Tab.1.left/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641075" />
     <state width="1324" height="207" key="GridCell.Tab.1.left/0.0.1440.864/1440.0.1366.768@1440.0.1366.768" timestamp="1600086337755" />
@@ -1185,6 +893,7 @@
     <state width="1398" height="242" key="GridCell.Tab.1.left/0.23.1440.832@0.23.1440.832" timestamp="1599090916975" />
     <state width="1278" height="239" key="GridCell.Tab.1.left/0.23.1440.833@0.23.1440.833" timestamp="1596982849807" />
     <state width="1278" height="239" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1597013012065" />
+    <state width="665" height="263" key="GridCell.Tab.1.left/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850390199" />
     <state width="978" height="241" key="GridCell.Tab.1.left/0.23.1440.835@0.23.1440.835" timestamp="1594602050228" />
     <state width="1712" height="562" key="GridCell.Tab.1.left/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720378" />
     <state width="1398" height="205" key="GridCell.Tab.1.left/0.23.1440.836@0.23.1440.836" timestamp="1599343189041" />
@@ -1235,8 +944,8 @@
     <state width="1260" height="247" key="GridCell.Tab.1.left/1440.23.1366.745/0.23.1440.848@0.23.1440.848" timestamp="1598438052657" />
     <state width="1260" height="213" key="GridCell.Tab.1.left/1440.23.1366.745/0.23.1440.848@1440.23.1366.745" timestamp="1598281309559" />
     <state width="1260" height="247" key="GridCell.Tab.1.left/1440.23.1366.745/0.23.1440.849@1440.23.1366.745" timestamp="1598458567608" />
-    <state width="1090" height="263" key="GridCell.Tab.1.right" timestamp="1600771312252">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state width="665" height="263" key="GridCell.Tab.1.right" timestamp="1600850390200">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state width="1324" height="207" key="GridCell.Tab.1.right/0.0.1440.863/1440.0.1366.768@1440.0.1366.768" timestamp="1600080641076" />
     <state width="1324" height="207" key="GridCell.Tab.1.right/0.0.1440.864/1440.0.1366.768@1440.0.1366.768" timestamp="1600086337756" />
@@ -1247,6 +956,7 @@
     <state width="1398" height="242" key="GridCell.Tab.1.right/0.23.1440.832@0.23.1440.832" timestamp="1599090916976" />
     <state width="1278" height="239" key="GridCell.Tab.1.right/0.23.1440.833@0.23.1440.833" timestamp="1596982849807" />
     <state width="1278" height="239" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1597013012066" />
+    <state width="665" height="263" key="GridCell.Tab.1.right/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850390200" />
     <state width="978" height="241" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1594602050230" />
     <state width="1712" height="562" key="GridCell.Tab.1.right/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600269720379" />
     <state width="1398" height="205" key="GridCell.Tab.1.right/0.23.1440.836@0.23.1440.836" timestamp="1599343189042" />
@@ -1340,11 +1050,12 @@
     <state x="388" y="258" width="599" height="543" key="find.popup/1440.0.1366.768/0.0.1440.871@0.0.1440.871" timestamp="1598436877756" />
     <state x="388" y="258" width="599" height="545" key="find.popup/1440.0.1366.768/0.0.1440.872@0.0.1440.872" timestamp="1598451925307" />
     <state x="388" y="274" width="599" height="530" key="find.popup/1440.23.1366.745/0.23.1440.849@0.23.1440.849" timestamp="1598449686429" />
-    <state x="1449" y="405" width="670" height="605" key="run.anything.popup" timestamp="1600764996499">
-      <screen x="1440" y="23" width="1366" height="745" />
+    <state x="-2421" y="635" width="1256" height="1151" key="run.anything.popup" timestamp="1600850534485">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
     <state x="-2542" y="538" width="1192" height="1164" key="run.anything.popup/0.0.1440.865/-2560.-203.2560.1440@-2560.-203.2560.1440" timestamp="1599040219931" />
     <state x="426" y="83" width="670" height="673" key="run.anything.popup/0.23.1440.834@0.23.1440.834" timestamp="1597013580024" />
+    <state x="-2421" y="635" width="1256" height="1151" key="run.anything.popup/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850534485" />
     <state x="426" y="83" width="670" height="674" key="run.anything.popup/0.23.1440.835@0.23.1440.835" timestamp="1600462387189" />
     <state x="-2542" y="549" width="1192" height="1145" key="run.anything.popup/0.23.1440.836/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600267864726" />
     <state x="363" y="200" width="670" height="675" key="run.anything.popup/0.23.1440.836@0.23.1440.836" timestamp="1599466739149" />
