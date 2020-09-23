@@ -1,0 +1,5 @@
+<% if @archive.errors.any? %>
+$('#alerts').empty();
+$('#alerts').html('<%= escape_javascript render 'update_errors' %>');
+<% end %>
+

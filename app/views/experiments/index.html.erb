@@ -1,0 +1,53 @@
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+
+<% content_for :right do %>
+  <%= render :partial => "right_side_list_menu" %>
+<% end -%>
+<hr />
+
+<p id="notice"><%= notice %></p>
+
+<h1>Experiments :: <%= @title %></h1>
+<table width="100%" class="SAXSDisplay">
+  <% count = 1 %>
+  <% @experiments.each do |experiment| %>
+    <tr class="ListLine2">
+      <th colspan="3" align="center">
+        <%= raw RedCloth.new(truncate_words(experiment.title)).to_html %>
+        </span>
+      </th>
+    </tr>
+
+    <tr>
+
+      <th colspan="1" width="200" height="150">
+        <% meta = ActiveStorage::Analyzer::ImageAnalyzer.new(experiment.figure).metadata %>
+        <% if meta[:width] > 250 %>
+          <%= image_tag experiment.figure.variant(resize_to_fit: [250, nil])  %>
+        <% else %>
+          <%= image_tag experiment.figure  %>
+        <% end %>
+      </th>
+
+      <th colspan="2" align="left">
+        <table class="RightMenu_Details">
+          <tr><td>BIOISIS ID ::  <%= link_to experiment.bioisis_id, experiment_path(experiment.id)  %></td></tr>
+
+          <% if experiment.publications.size >0 %>
+            <%= render  :partial => "has_publication", locals: {pub: experiment.publications[0]} %>
+          <% else %>
+            <%= render  :partial => "no_publication", locals: {exp: experiment} %>
+          <% end %>
+
+          <tr><td><span class="data_date">Added: <I><%= nice_date(experiment.created_at) %></I></span></td></tr>
+        </table>
+      </th>
+    </tr>
+    <% count += 1 %>
+  <% end %>
+  <tr><th colspan="3" class="specalt"><%== pagy_nav(@pagy) %></th></tr>
+</table>
+<br>
+

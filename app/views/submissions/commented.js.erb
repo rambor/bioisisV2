@@ -1,0 +1,6 @@
+$('#add_comment_form').empty();
+if ($('#comments_table tr').length === 0){
+    $('#comments_table').append("<%= escape_javascript(render(inline: "<tr><th>Issues</th><th></th><th>Resolved?</th></tr>")) %>");
+    $('#approval_submit').replaceWith("<%= escape_javascript(render(:partial => "/submissions/submit_review_link", :locals => {:submission_id => @submission_id}) ) %>");
+}
+$('#comments_table').append("<%= escape_javascript(render(:partial => "/comments/comment", locals: { comment: @comment })) %>");

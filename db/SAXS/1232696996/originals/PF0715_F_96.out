@@ -1,0 +1,86 @@
+
+           ####      G N O M              Version 5.0 (r8972)      ####
+                                               Tue Sep 15 11:48:38 2020
+
+           ####      Configuration                                 ####
+
+    System Type:                   arbitrary monodisperse (job = 0)
+    Minimum characteristic size:         0.0000
+    Maximum characteristic size:        96.0000
+    rad56:                               0.0000
+    Force 0.0 at r = rmin:                  yes
+    Force 0.0 at r = rmax:                  yes
+    Initial alpha:                       0.0000
+    Initial random seed:    3411446744837675448
+    Points in real space:                    13
+
+    Input  1:                      PF0715_F_96.iofq
+    First data point used:                    1
+    Last data point used:                    13
+    Scaling coefficient:             0.1000E+01
+    Experimental setup:            point collimation
+
+
+           ####      Results                                       ####
+
+    Parameter    DISCRP  OSCILL  STABIL  SYSDEV  POSITV  VALCEN  SMOOTH
+    Weight        1.000   3.000   3.000   3.000   1.000   1.000   2.000
+    Sigma         0.300   0.600   0.120   0.120   0.120   0.120   0.600
+    Ideal         0.700   1.100   0.000   1.000   1.000   0.950   0.000
+    Current       3.016   1.402   0.013   0.833   0.997   0.970  99.999
+               --------------------------------------------------------
+    Estimate      0.000   0.776   0.988   1.000   0.999   0.973   0.000
+
+    Angular range:                       0.0000 to       0.0140
+    Reciprocal space Rg:             0.2497E+02
+    Reciprocal space I(0):           0.7038E+03
+
+    Real space range:                    0.0000 to      96.0000
+    Real space Rg:                   0.2340E+02 +-   0.3814E-02
+    Real space I(0):                 0.7038E+03 +-   0.4847E-02
+
+    Highest ALPHA (theor):           0.3254E+13
+    Current ALPHA:                   0.1704E+01
+
+    Total Estimate:                      0.7333 (a REASONABLE solution)
+
+
+
+           ####      Experimental Data and Fit                     ####
+
+      S          J EXP       ERROR       J REG       I REG
+
+   0.000000E+00   0.703800E+03   0.459803E-02   0.703771E+03   0.703771E+03
+   0.116900E-02   0.703600E+03   0.254611E-01   0.703594E+03   0.703594E+03
+   0.233900E-02   0.703000E+03   0.358842E-01   0.703067E+03   0.703067E+03
+   0.350800E-02   0.702200E+03   0.335042E-01   0.702189E+03   0.702189E+03
+   0.467800E-02   0.700900E+03   0.300609E-01   0.700961E+03   0.700961E+03
+   0.584800E-02   0.699300E+03   0.176404E-01   0.699383E+03   0.699383E+03
+   0.701700E-02   0.697400E+03   0.129184E-01   0.697457E+03   0.697457E+03
+   0.818600E-02   0.695100E+03   0.195783E-01   0.695186E+03   0.695186E+03
+   0.935600E-02   0.692500E+03   0.180130E-01   0.692567E+03   0.692567E+03
+   0.105300E-01   0.689600E+03   0.152197E-01   0.689593E+03   0.689593E+03
+   0.117000E-01   0.686300E+03   0.118902E-01   0.686288E+03   0.686288E+03
+   0.128600E-01   0.682700E+03   0.801619E-02   0.682677E+03   0.682677E+03
+   0.140300E-01   0.678700E+03   0.383499E-02   0.678700E+03   0.678700E+03
+
+           ####      Real Space Data                               ####
+
+           Distance distribution  function of particle  
+
+
+      R          P(R)      ERROR
+
+  0.0000E+00  0.0000E+00  0.0000E+00
+  0.8000E+01  0.6293E+00  0.2210E-02
+  0.1600E+02  0.1043E+01  0.2704E-02
+  0.2400E+02  0.1254E+01  0.1841E-02
+  0.3200E+02  0.1284E+01  0.1711E-03
+  0.4000E+02  0.1166E+01  0.1733E-02
+  0.4800E+02  0.9352E+00  0.3139E-02
+  0.5600E+02  0.6376E+00  0.3528E-02
+  0.6400E+02  0.3227E+00  0.2622E-02
+  0.7200E+02  0.4443E-01  0.5897E-03
+  0.8000E+02 -0.1405E+00  0.1808E-02
+  0.8800E+02 -0.1743E+00  0.2897E-02
+  0.9600E+02  0.0000E+00  0.0000E+00

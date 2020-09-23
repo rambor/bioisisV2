@@ -1,0 +1,46 @@
+<h2>Scatter Download Form</h2>
+<div class="download-form"><%= form_with model: ScatterDownload.new, url: agree_to_download_path, remote: true do |f| %>
+    <p>
+      <%= f.label :principal_investigator, "PI (optional)", :style => "float:left; width:100px;" %>
+      <%= f.text_field :principal_investigator %></p>
+    <p>
+      <%= f.label :institution, :class =>'new_scatter_download', :style => "float:left; width:100px;" %>
+      <%= f.text_field :institution %>
+    </p>
+    <p><%= f.label :country, :style => "float:left; width:100px;" %>
+      <%= f.text_field :country %></p>
+    <%= f.radio_button :status, 'Academic', :style => "float:left; width:100px;" %>
+    <%= f.label :status, 'Academic', :value => 'academic' %><br>
+    <%= f.radio_button :status, 'Government', :style => "float:left; width:100px;" %>
+    <%= f.label :status, 'Government', :value => 'government' %><br>
+    <%= f.radio_button :status, 'Non-Profit', :style => "float:left; width:100px;" %>
+    <%= f.label :status, 'Non-Profit', :value => 'nonprofit' %><br>
+    <%= f.radio_button :status, 'Industry', :style => "float:left; width:100px;" %>
+    <%= f.label :status, 'Industry', :value => 'industry' %><br>
+
+    <%= f.label :email, "Use Email for Version Changes? ", :style => "float:left;" %>:
+    <%= f.check_box :email, :as => :boolean %><br>
+
+    <div>
+      <hr>
+      <h3>Terms of Use</h3>
+      <p class="about">
+        Downloading and using Sc&#8491;tter means you agree to the following:
+      </p>
+      <p class="about">
+        As the user (person downloading Sc&#8491;tter), you are allowed to use Sc&#8491;tter under the <%= link_to "Apache 2.0 License", "https://www.apache.org/licenses/LICENSE-2.0" %>. We are providing the JAVA-based program Sc&#8491;tter “as is” without warranty of any kind, expressed or implied. The authors of Sc&#8491;tter shall not be, in any event, be held liable for any claim, damages or other liability arising from the use of Sc&#8491;tter. See the License for the specific language governing permissions and
+        limitations under the License.
+      </p>
+
+      <p class="about">
+        Scatter is being provide free of charge to both academic and commercial users.
+      </p>
+      <h3> EU General Data Protection Regulation</h3>
+      <p>Your information above is being collected for research purposes only.  The information is not directly shared with any company or entity but is anonymized through aggregation for reporting purposes to our funding bodies. Email addresses and associated names are not shared but collected for registration purposes and to optionally notify users of software updates. Bioisis.net and Sc&#8491;tter is supported in part by the US Department of Energy, US National Institutes of Health, the UK STFC and Wellcome Trust.  Please contact Robert Rambo (robert_p_rambo at hotmail dot com) for further information.
+      </p>
+    </div>
+    <%= f.label :terms_of_service, "Agree? ", :style => "float:left; width:100px;" %>:
+    <%= f.check_box :terms_of_service, :as => :boolean %> <br>
+    <hr>
+    <%= f.submit "Agree to Download" %>
+  <% end %></div>

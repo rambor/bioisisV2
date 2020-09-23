@@ -1,0 +1,11 @@
+<div id="LeftMenu">
+  <ul id="RightSideList">
+    <li><%= link_to "Comment", new_comment_path(:submission => {:id => @submission.id}), :remote => true %></li>
+    <% if total_comments(@submission) == 0 %>
+      <%= render(:partial => "approval_link", :locals => {:data_directory => @submission.data_directory}) %>
+    <% else %>
+      <%= render(:partial => "submit_review_link", :locals => {:submission_id => @submission.id}) %>
+    <% end %>
+  </ul>
+</div>
+Issues that prevent approval of the deposit should be noted by adding comments. These comments will be emailed to the depositor for resolution.

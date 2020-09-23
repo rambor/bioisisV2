@@ -1,0 +1,13 @@
+<div id="LeftMenu">
+  <ul id="RightSideList">
+    <li><%= link_to "New Deposits", {:controller=>"experiments", :action=>"index"} %></li>
+    <li><%= link_to "Proteins", experiments_by_material_path(:id => 0) %></li>
+    <li><%= link_to "Lipids", experiments_by_material_path(:id => 1) %></li>
+    <li><%= link_to "Surfactants", experiments_by_material_path(:id => 2)  %></li>
+    <li><%= link_to "RNA Related", experiments_by_material_path(:id => 3) %></li>
+    <li><%= link_to "DNA Related", experiments_by_material_path(:id => 4)  %></li>
+    <li><%= link_to "Carbohydrates", experiments_by_material_path(:id => 5)  %></li>
+    <li><%= link_to "Gels", experiments_by_material_path(:id => 6)  %></li>
+    <li><%= link_to "Other", experiments_by_material_path(:id => 7)  %></li>
+  </ul>
+</div>

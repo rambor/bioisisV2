@@ -1,0 +1,4 @@
+<tr id="real_space_file_<%= rcp.real_space_file.id %>">
+  <td class="real-space-row">Real-Space file: <%= rcp.real_space_file.file.filename %> </td>
+  <td><%= link_to "(remove)", remove_real_space_file_path(:dataset_id => data_set.id, :file_id => rcp.real_space_file.id), data: {confirm: "Are you sure?"}, remote: true, :class => "remove_file" %> | <%= link_to "view", view_real_space_file_path(:dataset_id => data_set.id, :file_id => rcp.real_space_file.id), remote: true, id: "view", class: "view_file" %></td>
+</tr>

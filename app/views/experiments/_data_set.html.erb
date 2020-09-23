@@ -1,0 +1,79 @@
+
+<p>
+  <h1 class="ExperimentalDetails">
+  <strong>Data Set:</strong>
+  <%= raw RedCloth.new(data_set.name).to_html %>
+  </h1>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= raw RedCloth.new(data_set.description).to_html %>
+</p>
+<p>
+  <strong>Buffer (Matrix):</strong>
+  <%= raw RedCloth.new(data_set.buffer).to_html %>
+</p>
+<p>
+  <strong>Source:</strong>
+  <%= data_set.source %>
+</p>
+<p>
+  <strong>Instrument:</strong>
+  <%= data_set.instrument_name %>
+</p>
+
+<p>
+  <strong>Deposited files in dataset: </strong>
+<table class="DataPlots" id="DataPlots">
+  <tbody>
+  <% data_set.reciprocal_space_files.each do |rcp| %>
+
+    <tr id="file_<%= rcp.id %>">
+      <td colspan="2"><div class="archive_row">Download <%= link_to rcp.file.filename, rails_blob_path(rcp.file, disposition: 'attachment'), class:"nonremove" %>
+      </div></td></tr>
+
+    <% if rcp.file.filename.extension == "sec" %>
+      <td colspan="2" id="sec_<%= rcp.id %>">
+        <% data = rcp.file.get_sec_trace %>
+        <%= render  :partial => "sec", locals: {data_to_plot: data} %>
+      </td>
+    <% else %>
+
+      <tr>
+        <td id="normal_axis_<%= rcp.id %>">
+          <% data = rcp.file.get_all_transformed_data_to_plot %>
+          <%= render  :partial => "normal_axis", locals: {data_to_plot: data[0]} %>
+        </td>
+        <td id="log10_axis_<%= rcp.id %>">
+          <%= render  :partial => "double_log_axis", locals: {data_to_plot: data[1]} %>
+        </td>
+      </tr>
+      <tr>
+        <td id="kratky_<%= rcp.id %>">
+          <%= render  :partial => "kratky_plot", locals: {data_to_plot: data[2]} %>
+        </td>
+        <td id="qIq_<%= rcp.id %>">
+          <%= render  :partial => "qIq_plot", locals: {data_to_plot: data[3]} %>
+        </td>
+      </tr>
+    <% end %>
+
+    <% unless rcp.real_space_file.nil? %>
+      <tr id="real_space_file_<%= rcp.real_space_file.id %>">
+        <% ymin, ymax, pr_data = get_real_space_data(rcp.real_space_file) %>
+        <td class="real-space-row" colspan="2">
+          <%= render partial: "real_space_files/pr_file", :locals => {ymin: ymin, ymax: ymax, data_to_plot: pr_data} %>
+        <div class="archive_row">Download <%= link_to rcp.real_space_file.file.filename, rails_blob_path(rcp.real_space_file.file, disposition: 'attachment'), class:"nonremove" %>
+        </div>
+        </td>
+      </tr>
+    <% end %>
+
+  <% end %>
+  </tbody>
+</table>
+<div class="view_plot" id="view_plot">
+</div>
+</p>
+
+

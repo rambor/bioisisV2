@@ -1,0 +1,43 @@
+<% content_for :left do %>
+  <%= render :partial => "left_side_edit_menu" %>
+<% end -%>
+<h1>Editing Submission <%= @experiment.submission.data_directory %></h1>
+
+<% if @experiment.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@experiment.errors.count, "error") %> prohibited this experiment from being saved:</h2>
+
+    <ul>
+      <% @experiment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="instructions">
+  <p>Deposits require an informative (*.png) image figure that illustrates and summarizes the deposited experiment. In some cases this can be a simple image of the proposed structure. Consider a figure that is supoprted by the experimental abstract.</p>
+</div>
+
+<%= form_with model: @experiment,  url: upload_figure_path(:id => @experiment.id) do |form| %>
+  <div class="field">
+    <%= form.label "Abstract (DESCRIPTION)" %>
+    <%= form.text_area :description, cols:"75", rows:@total_rows %>
+  </div>
+
+  <div class="field">
+    <%= form.file_field :figure %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<h2>Uploaded Figure</h2>
+<div id="uploaded_figure">
+  <% if @experiment.figure.attached? %>
+  <%= image_tag url_for @experiment.figure  %>
+  <% end %>
+</div>
+

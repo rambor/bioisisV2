@@ -1,0 +1,2 @@
+$('#add_comment_form').empty();
+$("tr#comment_<%= @comment.id %>").replaceWith("<%= escape_javascript("#{render :partial => 'comment', :locals => { :comment => @comment }}").html_safe %>");

@@ -1,0 +1,97 @@
+
+<%= form_with model: @experiment, method: :put do |form| %>
+  <% if @experiment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@experiment.errors.count, "error") %> prohibited this experiment from being saved:</h2>
+      <ul>
+        <% @experiment.errors.messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_area :title, cols: "75", rows: "1" %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Abstract (Summary of Experiment)" %>
+    <%= form.text_area :description, cols:"75", rows:@total_rows %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Status of Deposit" %>
+    <%= form.select :state, options_for_select(@status_of, 1) %>
+    <p>(Deposits may be calibration standards or other results that are not published but available for analysis)</p>
+  </div>
+
+
+  <div class="field">
+    <label for="experiment_publication_doi">Publication DOI (use bioRXiv if possible)</label>
+    https://doi.org/<%= form.text_field :publication_doi, size:"60" %>
+    <%= submit_tag "LookUpDOI", type: "button", class: "doi_lookup_button", id: "doi_lookup_button" %>
+  </div>
+
+  <fieldset>
+    <legend>Publication:</legend>
+    <%= form.fields_for :publications, @experiment.publications.each do |pub_form| %>
+      <div>
+        <%= pub_form.label "Publication source (journal title or thesis university and department)" %>
+        <%= pub_form.text_field :container_title, size:"70" %>
+      </div>
+      <div>
+        <%= pub_form.label :title %>
+        <%= pub_form.text_area :title, cols:"60", rows:"2" %>
+      </div>
+      <div>
+        <%= pub_form.label :volume %>
+        <%= pub_form.text_field :volume %>
+      </div>
+      <div>
+        <%= pub_form.label :issue %>
+        <%= pub_form.text_field :issue %>
+      </div>
+      <div>
+        <%= pub_form.label :page %>
+        <%= pub_form.text_field :page %>
+      </div>
+      <div>
+        <%= pub_form.label :year %>
+        <%= pub_form.text_field :year %>
+      </div>
+      <div>
+        <%= pub_form.label :month %>
+        <%= pub_form.text_field :month %>
+      </div>
+      <div>
+        <%= pub_form.label "DOI URL" %>
+        <%= pub_form.text_field :url, size:"70" %>
+      </div>
+    <% end %>
+    <div class="contributors_to_add" id="contributors_to_add">
+      <h4>Authors</h4>
+      <table class="Submission" id="contributors_to_add_table">
+      </table>
+    </div>
+  </fieldset>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+  <h4>Associated Contributors</h4>
+  <p>Please include those that have contributed to the SAS experiment.</p>
+  <div class="contributors">
+    <table class="Submission" id="contributor_list">
+    <% if @experiment.contributors.size > 0 %>
+        <% @experiment.contributors.each do |con| %>
+          <%= render :partial => 'added_contributor', :locals => { :con => con } %>
+        <% end %>
+    <% end %>
+    </table>
+  </div>
+
+  <%= render :partial => "form_contributors", locals: {:experiment => @experiment} %>
+
+<% end %>

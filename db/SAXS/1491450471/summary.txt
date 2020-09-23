@@ -1,0 +1,58 @@
+#REMARK USER INFORMATION 
+DATA_DIRECTORY	1491450471
+EMAIL		
+CREATED_ON	2017-04-06 04:46:20 UTC
+DOI 10.1111/febs.14611
+
+#REMARK SUMMARY
+TITLE	ColG tandem CBD at pCa3
+
+BIOISIS_ID COLGCA	
+
+EXP_DESCRIPTION	SAXS profile of the tandem collagen-binding domain. The segment was exchanged into a buffer where calcium concentration was buffered using EGTA and then sent to ALS BL 12.3.1 for SAXS analysis. Sample homogeneity was assessed using Native PAGE
+SOURCE_LOCATION	ALS BL 12.3.1
+
+PUBLICATION	To be published
+
+#REMARK EXPERIMENTAL CONDITIONS
+EXPERIMENTAL_DETAILS	Scattering data was collected for individual samples in a concentration range between 2 and 6 mg/mL.  Each data set was collected with three exposures: 0.5, 1, and 6 seconds.
+BUFFER			HEPES-Na
+pH			7.5
+TEMPERATURE		10.0
+SALT			NaCl
+SALT_CONCENTRATION	100
+DIVALENT		CaCl2
+DIVALENT_CONCENTRATION	1.2
+ADDITIVES		EGTA, glycerol
+
+PROTEIN			Yes
+DNA			No
+RNA			No
+MEMBRANE		No
+NANOPARTICLE		No
+
+#REMARK EXPERIMENTAL VALUES
+Io			97.06
+SIG_Io			0.48
+Io_MOLECULAR_WEIGHT	
+DMAX			75
+RG			24.0
+SIG_RG			3.0
+RG_REAL			
+SIG_RG_REAL		
+V_POROD			35637
+V_C			
+POROD_EXPONENT		
+
+#REMARK AUTHORS
+AUTHOR	Bauer		R
+AUTHOR	Matsushita		O
+AUTHOR	Sakon		J
+
+
+#REMARK	ALL UPLOADED FILES ARE RENAMED
+#REMARK	USE THE FOLLOWING KEY TO DETERMINE THE ORIGINAL UPLOADED FILE(S).
+#REMARK
+# RENAMED FILE			ORIGINAL FILE
+iofq_data_file			originals/zc_003.dat
+pofr_data_file			originals/zc_003.out.pofr

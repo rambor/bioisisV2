@@ -1,0 +1,4 @@
+<tr id="archive_<%= archive.id %>">
+  <td><%= archive.zip_file.filename %></td>
+  <td><%= link_to "view(edit)", "", id:"nonremove" %> | <%= link_to "remove", remove_archive_path(:id => archive.id), data: {confirm: "Are you sure?"}, :id => "remove" %></td>
+</tr>

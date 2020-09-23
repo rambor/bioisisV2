@@ -1,0 +1,42 @@
+
+<div class="welcometitle"><%= "#{@tag.upcase}" %>
+<span class="tutorial_small_text">... by Robert P. Rambo, Ph.D.
+</span>
+</div>
+
+<p class="about">
+The Guinier analysis, named after Andre Guinier, refers to the analysis of the SAXS scattering curve at very small scattering vectors.  His analysis allows for the  estimation of two SAXS invariants, the radius-of-gyration, R<sub>g</sub>, and the extrapolated intensity at zero scattering vector, I(0).  We present a basic fitting using Sc&#8491;tter to assess R<sub>g</sub>.</p>
+
+<p class="about">After loading a file in "Analysis" tab, an auto-Rg algorithm is performed.  This can be turned off by unchecking box (lower left panel).  It is advised to turn off auto-Rg when looking at unsubtracted datasets. </p>
+Figure 1<br><%= image_tag('guinier_figure_1.png') %>
+<p class="about">There are two manual methods for determining R<sub>g</sub>, a basic approach accessible through the G button (red arrow) and a more detailed approach using the Guinier Peak Analysis button (blue arrow). The automated method (Auto-Rg) determines the best fit line within the low q-range of data limited by q x R<sub>g</sub> < 1.3 (see page 71 of Svergun and Feign, 1982). This method does not trim bad points from the curve but the generated plot of the fit can be a useful guide for seeing where the data may be corrupted due to inter-particle interference or aggregation.
+</p>
+<p class="about">
+For manual Guinier analysis, press the "G" button, highlighted in red (on right).
+</p>
+Figure 2<br><%= image_tag('guinier_figure_2.png') %>
+<p class="about">
+A plot will pop up showing the best initial guess at the Guinier region.  The upper plot is the data and fit plotted as ln[I(q)] vs q^2 with the corresponding residuals in the lower plot. The Guinier parameters are updated in the analysis tab and the number of visual points has been automatically updated in the "LEFT" and "RIGHT" boxes (Figure 2, lower right). To manually add or remove points, use the arrows next to the numbers. 
+</p>
+
+<p class="about">
+The goal is to remove any non-linear points from the starting low-q region of the data. Curvature in the residuals suggests non-linear behavior. The maximum q value should be limited to a q x R<sub>g</sub> < 1.3 (green circle Figure 2) specified by the "RIGHT" box. Why 1.3?  From Feign and Svergun's SAXS book, the inequality helps insure the estimated parameters are within 10% of the true value. Remember, Guinier analysis is an approximation of the SAXS curve; therefore, these parameters I(0) and R<sub>g</sub> will be prone to approximation errors depending on how many points were used to define the Guinier region and likewise the quality of the data.
+</p>
+
+<p class="about">
+The Guinier parameters are continuously updated in the Analysis tab.  The currently displayed value is the value stored in the collection.  
+</p>
+
+
+<p class="about" align="left">
+Qualitatively, inspection of the Guinier region can reveal unexpected sample behaviour and is useful for evaluating the presence of sample aggregation or concentration-dependent scattering.  This is typified by non-linearity in the Guinier region.  For further information, please see the review by Putnam, C.D. <I>et al.</I>
+</p>
+
+<p class="about">	
+<%= image_tag('data_evaluation_review.png', :size=>'700x627') %>
+<span class="tutorial_small_text">
+Courtesy of <I>Putnam, C.D., Hammel, M., Hura, G.L., and Tainer, J.A. Q Rev Biophys. 2007 40(3):191-285</I>
+</span>
+<hr>
+</p>
+

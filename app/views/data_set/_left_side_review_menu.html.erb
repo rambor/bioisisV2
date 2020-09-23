@@ -1,0 +1,6 @@
+<div id="LeftMenu">
+  <ul id="RightSideList">
+    <li><%= link_to "Comment", new_comment_path(:submission => {:id => @submission.id}), :remote => true %></li>
+    <li> <%= link_to "Back", {:controller => :submissions, :action => :review, :id => @data_directory} %></li>
+  </ul>
+</div>

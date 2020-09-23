@@ -1,0 +1,5 @@
+<% if @use_code %>
+$('div.bid_search_result').empty().append('<span>Code available :: <span class="green_text"><%= @code %></span></span>');
+<% else %>
+$('div.bid_search_result').empty().append('<span>Code already in use, please choose another</span>');
+<% end %>

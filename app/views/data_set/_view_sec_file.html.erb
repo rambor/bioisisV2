@@ -1,0 +1,35 @@
+<p><strong>SEC Trace: <%= @data_to_plot.filename %></strong></p>
+<%= scatter_chart @data_to_plot.xy_data,
+                  xtitle: "frame",
+                  ytitle: "signal",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 5
+                  },
+                  library: {
+                      tooltips: {enabled: false},
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'linear',
+                                      gridLines: {
+                                          color: "black",
+                                          borderDash:[2,5],
+                                      }
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          max: @ymax,
+                                          min: @ymin,
+                                          stepSize: 1,
+                                          display: false
+                                      }
+                                  }]
+                      }
+                  }
+%>

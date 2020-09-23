@@ -1,0 +1,11 @@
+<p>Please add a comment to highlight any issues preventing the deposit from being approved.  All comments must ultimately be resolved&nbsp;</p>
+<%= form_with model: @comment, :remote => true do |f| %>
+  <% unless @comment.id.nil? %>
+    <%= f.hidden_field :id, :value => @comment.id %>
+  <% end %>
+  <%= f.hidden_field :submission_id, :value => @comment.submission_id %>
+  <%= f.hidden_field :user_id, :value => @comment.user_id %>
+  <%= f.label "Comment" %>
+  <%= f.text_area :comment, "rows" => 6, "cols" => 90 %>
+  <p><%= f.submit @comment.id.nil? ? "Add Comment" : "Update Comment" %>&nbsp;</p>
+<% end %>

@@ -1,0 +1,8 @@
+<table class="RightMenu_Details">
+<tr><th align="center"><p id="RightTitle"><span color="red">Missing Info</span></p></th></tr>
+</table>
+
+<%= @experiment.errors.include?(:description) || @experiment.errors.include?(:dog) ? "<p class=\"red_text\">...in GENERAL DETAILS</p>".html_safe : "" %>
+<%= @experiment.errors.include?(:data_sets) ? "<p class=\"red_text\">ADD A DATASET</p>".html_safe : "" %>
+<%= @experiment.errors.include?(:data_files) ? "<p class=\"red_text\">...DATASETS REQUIRE DATAFILES</p>".html_safe : "" %>
+

@@ -1,0 +1,32 @@
+<table border="0">
+  <tr><th class="tutorialtext" colspan="2" align="left">
+
+    <div class="welcometitle"><%= @tag.upcase %>
+      <span class="tutorial_small_text"></span>
+    </div>
+  </th></tr>
+
+  <tr><th colspan="2" align="left" class="tutorialtext">
+    <p class="about">
+      A deposit is a collection of SAS datasets where each dataset defines a common description such as buffer, column type, etc.  For instance, if a publication required SEC-SAXS of a protein under 3 different buffer conditions, this would constitute 3 different datasets under a single BioISIS deposit.  The single deposit should correspond to all the information required for the publication or thesis.
+
+      </p><p class="about">
+      A dataset requires a 3-column, space or tab delimited text file commonly called a *.dat file.  For SEC-SAS datasets, the collection of *.dat files should be zipped and deposited as supporting material OR converted to a *.sec file using Scatter .  The set of single dat files used for analysis and modeling are attached to the dataset.
+      Any associated P(r)-distribution can be uploaded as well and is associated with the uploaded *.dat file.  Any models, such as <I>ab initio</I> or homology models can be uploaded as a zip file containing all the supporting information. The following will be required:
+    </p>
+
+    <ul id="Requirement">
+      <li><span>INTENSITY FILE:</span><p class="about"> (3 column text file, column 1: q, column 2: Intensity, column 3: error )</p>
+      <li>FIGURE FILE:</li><p class="about">A png file image that best captures the essence of the experiments, could be model, Kratky plot, etc</p>
+    </ul>
+<p class="about">A general requirement of peer-reviewed journals and publications is the free distribution of experimental data.  To fulfill that need, BioIsis.net accepts experimental SAXS data and analyses for online redistribution.  Please email <font color="red">robert.rambo at diamond.ac.uk</font> for any questions regarding BioIsis.net.</p>
+
+    <br>
+
+    <p class="about"></p>
+
+
+  </th>
+  </tr>
+
+</table>

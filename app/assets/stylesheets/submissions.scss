@@ -1,0 +1,177 @@
+// Place all the styles related to the Submissions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+table.Submission {
+  font-size: 1.125em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #ffebc4;
+  text-align: left;
+  width:100%;
+}
+
+table.Submission#contributors_to_add_table {
+  font-size: 1.125em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #d7d7d7;
+  text-align: left;
+  width:100%;
+}
+
+table.Submission tr td {
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.Submission h1 {
+  background: #ffebc4;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 250px;
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+div.submission_links a:link {
+  color: #862cda;
+}
+div.submission_links a:hover {
+  color: #862cda;
+  font-style: revert;
+}
+
+div.submission_links ul {
+  margin-bottom: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+div.submission_links ul li {  width: 100%; height: 20px;  margin: 0 0 7px 0; }
+div.submission_links ul li a {
+  display: block;
+
+  margin: 10px 0 7px 0;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  font-size: 1.1em;
+  color: black;
+  padding: 5px 0 0 10px;
+  text-decoration: none;
+  background-color: #dcdbdb;
+}
+
+table.UploadedDataFiles {
+  font-size: 1.125em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border: none !important;
+  background: #ffebc4;
+}
+
+
+table.UploadedDataFiles td {
+  font-size: 0.9em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border: none !important;
+  background: #ffebc4;
+  vertical-align: top;
+  text-align: left;
+}
+
+table.UploadedDataFiles td.real-space-row {
+  font-size: 0.8em;
+  color: black;
+}
+
+
+table.UploadedDataFiles tr:nth-child(even) {
+  background: white;
+  color: black;
+}
+
+table.UploadedDataFiles tr:nth-child(odd) {
+  background: white;
+  color: #c984df;
+}
+
+
+table.UploadedPOFRDataFiles {
+  font-size: 1.125em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border:0px;
+  background: #ffebc4;
+  text-align: left;
+}
+
+table.UploadedPOFRDataFiles td {
+  font-size: 0.9em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #ffebc4;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+
+table.SubmissionDetails {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #ffebc4;
+  text-align: left;
+}
+
+table.SubmissionDetails tr td
+{
+  padding:4px 25px;
+  border-bottom: 3px solid #fff;
+}
+
+table.SubmissionDetails h1
+{
+  background: #faf2e3;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.SubmissionDisplay {
+  font-size: 1.125em;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #f1f0f0;
+  text-align: left;
+  width:100%;
+}
+
+table.SubmissionDisplay th {
+  font-size: 1.0em;
+  font-weight:normal;
+  font-family: Lucida Grande, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #dcdbdb;
+  color: #862cda;
+  text-align: left;
+  width:100%;
+}
+
+
+table.SubmissionDisplay tr td {
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+div.contributors_to_add {
+  visibility: hidden;
+}
+
+div.comments{
+  background: #fadfdf;
+}

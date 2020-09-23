@@ -1,0 +1,19 @@
+<p><strong>Contributors:</strong>
+<ul>
+<% @experiment.contributors.each do |name| %>
+  <li><%= name.last_name %>, <%= name.given_names %></li>
+<% end %>
+</ul>
+</p>
+
+<% if @experiment.publications.size > 0 %>
+<p>
+  <strong>Publications:</strong></p>
+  <p>
+  <% @experiment.publications.each do |pub| %>
+    <%= pub.title %>. <span class="italic" ><%= pub.container_title %></span> <%= pub.volume %>, (<%= pub.year %>)
+  </p><p><%= link_to "DOI LINK", pub.url, class: "doi"%></p>
+      <hr>
+  <% end %>
+</p>
+<% end %>

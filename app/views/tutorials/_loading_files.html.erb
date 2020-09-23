@@ -1,0 +1,28 @@
+<div class="welcometitle"><%= "#{@tag.upcase}" %>
+<span class="tutorial_small_text">... by Robert P. Rambo
+</span>
+</div>
+
+<p class="about">
+We use a drag-n-drop method for loading files into Sc&#8491;tter. Files can be dragged into either the ANALYSIS (*.dat) tab or SEC (*.sec or *.dat) tab.  Sc&#8491;tter handles 3 types of files (*.dat, *.sec, and *.pdb).  Click on the ANALYSIS tab. You will see 3 panels across the top and an large open panel on the bottom.  Simply drag and drop the *.dat file(s) into the bottom panel (Figure 1) to load the data.  Dat files are 3 column ASCII text files, 1st column is the scattering vector (must be positive number), 2nd column is intensity and 3rd column is sigma error.
+</p>
+<b>Figure 1 | Analysis Tab</b><br><%= image_tag('file_tab_1.png') %>
+<p class="about">
+Sc&#8491;tter can manage a large number of data files.
+</p>
+<ul>
+	<li class="red_text">If your data was collected in nm<sup>-1</sup>, Sc&#8491;tter automatically convert the file to inverse &#8491; by selecting the checkbox at the bottom left. Uncheck before dropping in more datafiles for data collected in inverse &#8491;
+</ul>
+
+<p class="about">Individual dat files can be removed from the list by right clicking (mouse) the highlight file. </p>
+<p class="about">All files can be removed using Clear button. </p>
+<p class="about" align="left">
+Alternatively, files can be loaded using the Load button (far right).  Here, a pop-up will allow you to select files from a list of file.
+</p>
+
+<hr>
+<p class="about" align="left">
+  For SEC-SAXS data, a collection of dat files representing SEC run can be loaded on the SEC tab. The files must be numbered sequentially so that the program will auto sort.  Otherwise, drag them in order of time.  If you are reloading a previous analysis from Sc&#8491;tter, a single *.sec file can be loaded.
+</p>
+<b>Figure 2 | SEC Tab</b><br><%= image_tag('file_tab_2.png') %>
+

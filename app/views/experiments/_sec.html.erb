@@ -1,0 +1,52 @@
+<%= scatter_chart data_to_plot.data,
+                  xtitle: "frame",
+                  ytitle: "signal",
+                  width: "600px",
+                  height: "300px",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 1
+                  },
+                  library: {
+                      tooltips: {enabled: false},
+                      title: {
+                          display: true,
+                          text: "SEC Trace ",
+                          fontStyle: 'bold',
+                          fontSize: '14'
+                      },
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'linear',
+                                      gridLines: { display: true, drawBorder: true, drawTicks: false },
+                                      ticks: {
+                                          display: false,
+                                          max: data_to_plot.xmax
+                                      },
+                                      scaleLabel: {
+                                          display: true,
+                                          fontSize: '12'
+                                      }
+
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          display: false,
+                                          min: data_to_plot.ymin,
+                                          max: data_to_plot.ymax
+                                      },
+                                      gridLines: { display: true, drawBorder: true, drawTicks: false, drawOnChartArea: false },
+                                      scaleLabel: {
+                                          display: true,
+                                          fontSize: '12'
+                                      }
+                                  }]
+                      }
+                  }
+%>

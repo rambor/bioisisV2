@@ -1,0 +1,10 @@
+<%= javascript_pack_tag 'edit_experiment_details' %>
+<% content_for :left do %>
+  <%= render :partial => "left_side_edit_menu" %>
+<% end -%>
+
+
+<h1>Editing Submission <%= @experiment.submission.data_directory %></h1>
+<%= hidden_field_tag "experiment_id", @experiment.id %>
+<%= render 'form', experiment: @experiment %>
+<%= link_to "Back", deposition_path(@experiment.submission.data_directory) %>

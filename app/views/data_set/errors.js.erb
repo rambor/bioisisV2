@@ -1,0 +1,6 @@
+$('#messages').empty();
+$('#alerts').empty();
+
+<% @data_set.errors.messages.each_pair do |k,v| %>
+$('#alerts').append('<p>Error <%= "=> #{v} " %></p>');
+<% end %>

@@ -1,0 +1,22 @@
+<p>Please upload a file that represents a real-space transform (indirect or direct) of the reciprocal space dataset <span class="red_text"><%= @rcp.file.filename %></span>.  This is optional but should be added if it is published or was required in the interpretation of the SAXS experiment.</p>
+<%= form_with model: RealSpaceFile.new, url: upload_real_space_file_path, class: "form-horizontal" do |f| %>
+
+  <%= f.hidden_field :reciprocal_space_file_id, :value => @rcp.id %>
+   <div class="div_table">
+     <%= f.label :dmax %>
+     <span><%= f.text_field :dmax, size:"20" %></span>
+   </div>
+
+<div class="div_table">
+  <%= f.label :method %>
+  <span><%= f.select :method, %w[Scatter BayesApp GNOM other]%></span>
+</div>
+
+  <div class="div_table">
+    <%= f.label "select file" %>
+    <span><%= f.file_field :file %></span>
+  </div>
+
+  <%= f.submit "Upload" %>
+<% end %>
+<%= link_to "back", :back %>

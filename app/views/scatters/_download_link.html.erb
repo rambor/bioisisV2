@@ -1,0 +1,12 @@
+<script type="text/javascript">
+
+    $(".download-file").click(function(){
+        $(".perc").text("Downloading, please wait");
+    });
+
+</script>
+
+<div class="perc">Click the Scatter IV link below to download, please wait, file is <%= @scatter.zip_file.byte_size/1000000 %>MB</div>
+<div class="download-file">
+<p>Download &#8649; <%= link_to "Scatter IV", download_file_path, class:"download-file" %></p>
+</div>

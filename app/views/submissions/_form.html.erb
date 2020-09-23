@@ -1,0 +1,19 @@
+<%= form_with(model: @submission, local: true) do |form| %>
+  <% if submission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
+
+      <ul>
+        <% submission.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>You can create your own BioIsis Id (BID) to reference for publication.  The BID code is a six (6) letter number combination. </p>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

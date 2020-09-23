@@ -1,0 +1,37 @@
+<%= javascript_pack_tag 'file_upload' %>
+<div class="alerts" id="alerts">
+</div>
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+
+<h1>Supporting Archive File</h1>
+<ul>
+  <li>Provide a comprehensive description of at least 50 characters.</li>
+  <li>Archive Zip file should contain supplementary information such as sequence information, chemical information, PDB models, scripts used for modeling or data processing. </li>
+</ul>
+<%= form_with model: @archive, url: update_archive_path(@archive.id) do |f| %>
+  <table class="SubmissionDetails">
+    <tr><td><h1 class="submissionH1">DESCRIPTION</h1><span class="instructions">Provide thorough description of the contents of the archive (at least 50 characters).</span></td><td><%= f.text_area :description, "cols" =>50, "rows"=>10 %></td></tr>
+
+    <tr><th colspan="2"><div class="small_white_text">character Count :: <span class="small_white_text" id="charcount"><%= @archive.description.size %></span></div></th></tr>
+
+    <tr><td><h1 class="submissionH1">Uploaded ZIP FILE</h1><span class="instructions">To replace the zip file, you must delete the archive and create a new one.</span></td><td><%= @archive.zip_file.filename %></td></tr>
+  </table>
+    <%= f.submit "Update" %>
+
+<% end %>
+
+<hr>
+<% if @experiment.archives.size > 1 %>
+<h4>Associated Archive Files</h4>
+<table class="UploadedDataFiles" id="uploadedfiletable">
+  <% if @experiment.archives.size > 0 %>
+    <% @experiment.archives.each do |archive| %>
+      <% if archive.id != @archive.id %>
+        <tr id="archive_<%= archive.id %>"><td><%= archive.zip_file.filename %></td><td><%= link_to "view(edit)", edit_archive_path(:id => archive.id), class: "view_file" %> | <%= link_to "remove", remove_archive_path(:id => archive.id), data: {confirm: "Are you sure?"}, :id => "remove", :class => "remove_file" %></td></tr>
+      <% end %>
+    <% end %>
+  <% end %>
+</table>
+<% end %>

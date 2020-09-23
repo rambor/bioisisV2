@@ -1,0 +1,344 @@
+// Place all the styles related to the tutorials controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ol.optionslist li {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 11pt;
+  line-height: 2em;
+  color: #4c3a3a;
+}
+
+table.tutorialtable1 tr td {
+  padding:20px 20px;
+
+}
+
+table.tutorialtable tr th {
+  padding:7px;
+  border-bottom: 1px solid #666;
+}
+
+table.tutorialtable tr td{
+  padding:7px;
+  text-align:center;
+}
+
+.tutorial_small_text {
+  font-size:13px;
+  font-style:normal;
+  color: #666;
+  line-height: 1em;
+  font-family: 'Lucida Grande', Tahoma, Arial, Helvetica, sans-serif;
+  border-top: 0px solid #666;
+  border-bottom: 0px solid #666;
+}
+
+table tr th.tutorialtext {
+
+  background:#fff;
+  color:#000;
+  font-size:0.8em;
+  padding:3px 10px;
+  border:2px solid #fff;
+}
+
+.no_decor_link {
+  text-decoration:none;
+  font-weight: bold;
+}
+
+
+a.no_decor_link:link {color:#8A2BE2;}     /* unvisited link */
+a.no_decor_link:visited {color:#8A2BE2;}  /* visited link */
+a.no_decor_link:hover {color:#8A2BE2;}    /* mouse over link */
+a.no_decor_link:active {color:#8A2BE2;}   /* selected link */
+
+.anchor_link {
+  text-decoration:none;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+a.anchor_link:link {color:#8A2BE2;}     /* unvisited link */
+a.anchor_link:visited {color:#8A2BE2;}  /* visited link */
+a.anchor_link:hover {color:#8A2BE2;}    /* mouse over link */
+a.anchor_link:active {color:#8A2BE2;}   /* selected link */
+
+
+h1 {
+  font-weight: bold;
+  color:#8A2BE2;
+  font-size: 12pt;
+  text-transform:uppercase;
+}
+
+li.hint {
+
+}
+
+h2 {
+  color:red;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+h4 {
+  font-weight: bold;
+  color:#8A2BE2;
+  font-size: 12pt;
+  text-transform:uppercase;
+}
+
+h5 {
+  font-weight: normal;
+  color:green;
+  font-size: 12pt;
+  text-transform:uppercase;
+}
+
+table {
+  border-collapse:collapse;
+  font-family: 'Lucida Grande', Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.instructions {
+  color: black;
+  font: normal 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color:black;
+}
+a:visited {
+  text-decoration: none;
+  color:black;
+}
+a:active {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: none;
+  color:red;
+}
+
+h1.NewExperimentH1 a {
+  color: #666;
+  font-size:0.8em;
+  background-color: #fff;
+  padding: 1px 17px;
+  border: 0px solid #ccc;
+  text-decoration: none;
+}
+
+h1.submissionH1 {
+  color: #666;
+  font-size:1em;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+h1.NewExperimentH2 a {
+  color: #666;
+  font-size:1em;
+  background-color: #fff;
+  padding: 1px 17px;
+  border-bottom: 0px solid #666;
+  text-decoration: none;
+}
+
+table.GrayParameters {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: LightGray;
+  text-align: left;
+
+}
+table.GrayParameters tr td
+{
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.GrayParameters h1
+{
+  background: white;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 200px;
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.YellowParameters {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: red;
+  border:1px;
+  background: LightGray;
+  text-align: left;
+
+}
+table.YellowParameters tr td
+{
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.YellowParameters h1
+{
+  background: white;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 200px;
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.PurpleParameters {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #f0e8ff;
+  text-align: left;
+
+}
+table.PurpleParameters tr td
+{
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.PurpleParameters h1
+{
+  background: white;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 200px;
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.CoralParameters {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #FFCCCC;
+  text-align: left;
+
+}
+table.CoralParameters tr td
+{
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.CoralParameters h1
+{
+  background: white;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 200px;
+  padding-left:4px;
+  color: Black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.SkyParameters {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: white;
+  text-align: left;
+
+}
+table.SkyParameters tr td
+{
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.SkyParameters h1
+{
+  background: DeepSkyBlue;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 200px;
+  padding-left:4px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.BasicDetails {
+  font:bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color:#666;
+}
+
+table.BasicDetails tr th {
+  padding:2px;
+}
+
+table.BasicDetails tr td {
+  border-top:thin solid;
+  border-color:white;
+  color: #4c3a3a;
+  vertical-align: center;
+  text-align:left;
+  padding:2px;
+}
+
+table.ExperimentalDetails {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #b8f2c9;
+  text-align: left;
+
+}
+
+table.ExperimentalDetails tr td {
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.ExperimentalDetails h1 {
+  background: #b1e2be;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 200px;
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+table.SAXSParameters {
+  font: 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border:1px;
+  background: #ffda96;
+  text-align: left;
+
+}
+
+table.SAXSParameters tr td {
+  padding:4px 25px;
+  border-bottom: 5px solid #fff;
+}
+
+table.SAXSParameters h1 {
+  background: #f2d59f;
+  border-top: 1.2px solid #666;
+  border-left: 1.2px solid #666;
+  width: 250px;
+  padding-left:4px;
+  color: #494949;
+  font-size: 1.2em;
+  font-weight: bold;
+}

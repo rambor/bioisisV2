@@ -1,0 +1,26 @@
+
+$('#experiment_publications_attributes_0_container_title').val("<%= @publication.container_title %>");
+$('#experiment_publications_attributes_0_title').val("<%= @publication.title %>");
+$('#experiment_publications_attributes_0_volume').val("<%= @publication.volume %>");
+$('#experiment_publications_attributes_0_issue').val("<%= @publication.issue %>");
+$('#experiment_publications_attributes_0_page').val("<%= @publication.page %>");
+$('#experiment_publications_attributes_0_year').val("<%= @publication.year %>");
+$('#experiment_publications_attributes_0_month').val("<%= @publication.month %>");
+$('#experiment_publications_attributes_0_url').val("<%= @publication.url %>");
+
+// select
+
+$('#contributors_to_add_table tbody').empty();
+<% if @contributors.size > 0 %>
+
+  $('div#contributors_to_add').css("visibility", "visible");
+
+  if ($('#contributors_to_add_table tr').length === 0){
+    $('#contributors_to_add_table').append('<tbody></tbody>');
+  }
+
+  <% count = 0; @contributors.each do |con| %>
+      $('#contributors_to_add_table >tbody:last-child').append("<%= escape_javascript("#{render :partial => 'potential_contributor', :locals => { :con => con, :count => count }}").html_safe %>");
+  <% count+=1; %>
+  <% end %>
+<% end %>

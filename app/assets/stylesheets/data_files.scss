@@ -1,0 +1,27 @@
+// Place all the styles related to the DataFiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.div_table {
+  display: table;
+  width: 100%
+}
+
+.div_table label {
+  display: table-cell;
+  font-size: small;
+  font-weight: bold;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.div_table span {
+  display: table-cell;
+  padding: 10px 10px 10px 6px;
+}
+
+div.pr_figure{
+  width: 400px;
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+}

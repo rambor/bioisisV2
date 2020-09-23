@@ -1,0 +1,143 @@
+<% if @data_to_plot.is_sec %>
+  <p><strong>SEC Trace: <%= @data_to_plot.filename %></strong></p>
+  <%= scatter_chart @data_to_plot.xy_data,
+                    xtitle: "frame",
+                    ytitle: "signal",
+                    dataset: {
+                        borderWidth: 1,
+                        fill: false,
+                        borderColor: "orange",
+                        backgroundColor: "transparent",
+                        pointBorderColor: "rgb(99,207,254)",
+                        pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                        pointRadius: 5
+                    },
+                    library: {
+                        tooltips: {enabled: false},
+                        scales: {
+                            xAxes: [{
+                                        id:'x-axis',
+                                        type: 'linear',
+                                        gridLines: {
+                                            color: "black",
+                                            borderDash:[2,5],
+                                        }
+                                    }],
+                            yAxes: [{
+                                        ticks: {
+                                            max: @ymax,
+                                            min: @ymin,
+                                            stepSize: 1,
+                                            display: false
+                                        }
+                                    }]
+                        }
+                    }
+  %>
+
+<% else %>
+<h4>Intensity Plot :: <%= @data_to_plot.filename %></h4>
+<%= scatter_chart @data_to_plot.xy_data,
+                  xtitle: "q-value",
+                  ytitle: "intensity",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 5
+                  },
+                  library: {
+                      tooltips: {enabled: false},
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'linear',
+                                      gridLines: {
+                                          color: "black",
+                                          borderDash:[2,5],
+                                      }
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          max: @ymax,
+                                          min: @ymin,
+                                          stepSize: 1
+                                      }
+                                  }]
+                      }
+                  }
+%>
+<h4>Log10 Intensity Plot</h4>
+<%= scatter_chart @data_to_plot.xy_log_data,
+                  xtitle: "q-value",
+                  ytitle: "log 10 intensity",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 5
+                  },
+                  library: {
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'logarithmic',
+                                      gridLines: {
+                                          color: "black",
+                                          borderDash:[2,5],
+                                      }
+                                  }],
+                          yAxes: [{
+                                      type: 'linear',
+                                      ticks: {
+                                          max: @ymax_log,
+                                          min: @ymin_log
+                                      }
+                                  }]
+                      }
+                  }
+%>
+
+<% if @data_to_plot.is_subtracted %>
+  <h4>Total Scattered Intensity Plot</h4>
+  <%= scatter_chart @data_to_plot.x_xy_data,
+                    xtitle: "q-value",
+                    ytitle: "q*I[q]",
+                    dataset: {
+                        borderWidth: 1,
+                        fill: false,
+                        borderColor: "orange",
+                        backgroundColor: "transparent",
+                        pointBorderColor: "rgb(99,207,254)",
+                        pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                        pointRadius: 5
+                    },
+                    library: {
+                        scales: {
+                            xAxes: [{
+                                        id:'x-axis',
+                                        type: 'linear',
+                                        gridLines: {
+                                            color: "black",
+                                            borderDash:[2,5],
+                                        }
+                                    }],
+                            yAxes: [{
+                                        gridLines: {
+                                            display:true
+                                        },
+                                        ticks:{
+                                            max: @data_to_plot.xy_max,
+                                        }
+                                    }]
+                        }
+                    }
+  %>
+  <% end %>
+<% end %>

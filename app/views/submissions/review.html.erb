@@ -1,0 +1,67 @@
+
+
+<% content_for :left do %>
+  <%= render :partial => "left_edit_reviewer_menu" %>
+<% end -%>
+
+<p class="signed_in">Submitted by: <span class="login"><%= @submission.email %></span></p>
+<p>Deposition ID: <%= @submission.data_directory %> BID <%= @experiment.bioisis_id %></p>
+<hr>
+<table width="100%" class="SubmissionDisplay">
+  <tr>
+    <th colspan="2" align="center">Information</th>
+  </tr>
+  <tr>
+    <td align="left">Title</td><td><%= raw RedCloth.new(@experiment.title).to_html %></td>
+  </tr>
+  <tr>
+    <td align="left">Abstract</td><td><%= raw RedCloth.new(@experiment.description).to_html %></td>
+  </tr>
+</table>
+
+<div id="add_comment_form">
+</div>
+
+<div id="comments" class="comments">
+  <table id="comments_table">
+    <tbody>
+    <% if @submission.comments.size > 0 %>
+      <tr><th>Issue</th><th>Resolved?</th></tr>
+      <% @submission.comments.each do |comment| %>
+        <%= render :partial => "comments/comment", locals: { comment: comment }%>
+      <% end %>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<h4>Associated Datasets</h4>
+<table class="Submission">
+  <% count = 0; @experiment.data_sets.each do |dataset| %>
+    <tr><td><%= raw RedCloth.new(dataset.name).to_html %></td><td align="right"><%= link_to "view", view_data_set_path(dataset.id), :class =>"nonremove" %></td></tr>
+    <% count += 1; %>
+  <% end %>
+</table>
+<hr>
+
+<% if @experiment.archives.size > 0 %>
+  <h4>Associated Archive Files</h4>
+  <table class="Submission">
+    <% count = 0; @experiment.archives.each do |archive| %>
+      <tr id="archive_<%= archive.id %>"><td><%= archive.zip_file.filename %></td><td align="right"><%= link_to "download", rails_blob_path(archive.zip_file, disposition: 'attachment'), class:"nonremove" %> | <%= link_to "view", view_archive_path(:archive_id => archive.id), id:"archive_#{archive.id}", :remote => true, :method => :post, :class =>"nonremove" %> | <%= link_to "hide", "#", id:"hide_#{archive.id}", :remote => true, :class =>"nonremove" %></td></tr>
+      <% count += 1; %>
+    <% end %>
+  </table>
+  <div class="view_archive" id="view_archive">
+  </div>
+  <hr>
+<% end %>
+
+
+<h4>Uploaded Supporting Figure</h4>
+<div id="uploaded_figure">
+  <% if @experiment.figure.attached? %>
+    <%= image_tag @experiment.figure.variant(resize_to_fit: [300, 300])  %>
+  <% end %>
+</div>
+

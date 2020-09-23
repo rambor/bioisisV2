@@ -1,0 +1,46 @@
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+
+<div class="alerts" id="alerts">
+</div>
+<p>The form can be filled with HTML, e.g.,
+  <ul>
+    <li>use <I>&amp;#176;</I> for degrees symbol when describing temperature</li>
+    <li>Superscripts use ^ symbol surrounding the character such as x^2^ to give x<sup>2</sup></li>
+    <li>Subscripts use ~ symbol surrounding the character such as x~2~ to give x<sub>2</sub></li>
+    <li>Italics use double underscore surrounding the phrase such as __E. coli__ to give <I>E. coli</I></li>
+    <li>SAXS datasets collected under common conditions should be grouped as a dataset</li>
+  </ul>
+</p>
+<%= form_with model: @data_set, url: @data_set.new_record? ? create_data_set_path(:id => @experiment.id) : update_data_set_path(@data_set.id) do |f| %>
+  <table class="SubmissionDetails">
+    <tr><td><h1 class="submissionH1">NAME (Title)</h1><span class="instructions">Provide concise summary of the dataset</span></td><td><%= f.text_field :name, size: 47 %></td></tr>
+    <tr><td><h1 class="submissionH1">DESCRIPTION</h1><span class="instructions">Provide a summary describing dataset include sample concentrations, molecular masses, etc. Indicate if the sample was flowing, type of column used and flow-rates.</span></td><td><%= f.text_area :description, "cols" =>47, "rows" => 4 %></td></tr>
+    <tr><td><h1 class="submissionH1">SOURCE</h1><span class="instructions">Select from list</span></td><td> <%= f.select :source, ['synchrotron', 'home source', 'home and synchrotron', 'spallation', 'reactor', 'XFEL']%></td></tr>
+    <tr><td><h1 class="submissionH1">INSTRUMENT</h1><span class="instructions">For synchrotron sources provide name as "beamline source" such as "B21 Diamond Light Source" or instrument e.g., SAXSLab XEUSS</span></td><td> <%= f.text_field :instrument_name, size: 47 %></td></tr>
+    <tr><td><h1 class="submissionH1">BACKGROUND/BUFFER</h1><p><span class="instructions">Please be specific and detailed such as <I>10 mM TRIS pH 8.0 with 5 mM DTT and 1% sucrose</I>.  If background is water, specify water. </span></p></td><td> <%= f.text_area :buffer, "cols" =>47 %></td></tr>
+    <tr><td><h1 class="submissionH1">SAMPLE COMPOSITION</h1><span class="instructions">Select all that apply. </span></td><td> </td></tr>
+    <%= f.collection_check_boxes :material_ids, Material.all, :id, :material do |b| %>
+       <tr><td align="right"><%= b.label %></td><td> <%= b.check_box %></td></tr>
+    <% end %>
+  </table>
+  <p>Any changes above must be saved:: <%= f.submit @data_set.new_record? ? "Create And Save" : "Save Changes" %></p>
+<% end %>
+
+<div class="files" id="uploaded">
+  <% if @data_set.reciprocal_space_files.size > 0 %>
+    <h1 class="submissionH1">Uploaded files for this dataset</h1>
+  <% end %>
+
+    <table class="UploadedDataFiles" id="uploadedfiletable" width="100%">
+      <tbody>
+      <% @data_set.reciprocal_space_files.each do |rcp| %>
+        <tr id="file_<%= rcp.id %>"><td><%= rcp.file.filename %></td><td><%= link_to "view", view_data_file_path(:dataset_id => @data_set.id, :file_id => rcp.id), id: "view", class: "view_file", remote: true %> | <%= link_to "(remove)", remove_data_file_path(:dataset_id => @data_set.id, :file_id => rcp.id), data: {confirm: "Are you sure?"}, remote: true, id: "remove", :class => "remove_file" %></td></tr>
+      <% end %>
+      </tbody>
+    </table>
+</div>
+
+<div class="view_upload" id="view_upload">
+</div>

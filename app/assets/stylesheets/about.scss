@@ -1,0 +1,20 @@
+// Place all the styles related to the About controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.journal{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  line-height: 1em;
+  color: #4c3a3a;
+}
+
+.journal-about{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 1.2em;
+  color: #4c3a3a;
+}

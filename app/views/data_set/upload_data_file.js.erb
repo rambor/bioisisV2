@@ -1,0 +1,11 @@
+$(':input#data_set_files').val('');
+$('#alerts').empty();
+
+if ($('#myTable tr').length === 0){
+    $('#uploadedfiletable').append('<tbody></tbody>');
+}
+
+$('#uploadedfiletable >tbody:last-child').append("<%= escape_javascript("#{render :partial => 'associated_reciprocal_space_file', :locals => { rcp: @rcp, data_set: @data_set }}").html_safe %>");
+
+
+

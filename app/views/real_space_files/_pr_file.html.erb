@@ -1,0 +1,42 @@
+  <p><strong>Real-space Transform: <%= data_to_plot.filename %></strong> d<sub>max</sub> :: <%= data_to_plot.dmax %></p>
+  <div class="pr_figure"><%= line_chart data_to_plot.pr_values,
+                    xtitle: "r",
+                    ytitle: "P(r)",
+                    dataset: {
+                        borderWidth: 1,
+                        fill: false,
+                        borderColor: "orange",
+                        backgroundColor: "transparent",
+                        pointBorderColor: "rgb(99,207,254)",
+                        pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                        pointRadius: 0
+                    },
+                    library: {
+                        tooltips: {enabled: false},
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            xAxes: [{
+                                        id:'x-axis',
+                                        type: 'linear',
+                                        gridLines: {
+                                            color: "black",
+                                            borderDash:[2,5]
+                                        }
+                                    }],
+                            yAxes: [{
+                                        gridLines: {
+                                            display:false
+                                        },
+
+                                        ticks: {
+                                            max: ymax,
+                                            min: ymin,
+                                            stepSize: 1,
+                                            display: false
+                                        }
+                                    }]
+                        }
+                    }
+  %>
+  </div>

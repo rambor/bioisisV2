@@ -1,0 +1,5 @@
+<tr id="file_<%= data_set.reciprocal_space_files.last.id %>">
+  <td><%= data_set.reciprocal_space_files.last.file.filename %></td>
+  <td><%= link_to "(remove)", remove_data_file_path(params[:id], :dataset_id => data_set.id, :file_id => data_set.reciprocal_space_files.last.id), data: {confirm: "Are you sure?"}, remote: true %></td>
+  <td><%= link_to "view", view_data_file_path(params[:id], :dataset_id => data_set.id, :file_id => data_set.reciprocal_space_files.last.id), id: "view" %></td>
+</tr>

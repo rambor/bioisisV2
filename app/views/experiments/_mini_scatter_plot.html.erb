@@ -1,0 +1,42 @@
+<%= scatter_chart data_to_plot[0],
+                  xtitle: "q-value",
+                  ytitle: "intensity",
+                  width: "150px",
+                  height: "150px",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 1
+                  },
+                  library: {
+                      tooltips: {enabled: false},
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'linear',
+                                      gridLines: { display: false, drawBorder: true },
+                                      ticks: {
+                                         display: false,
+                                         max: data_to_plot[1]
+                                      },
+                                      scaleLabel: {
+                                       display: false
+                                        }
+
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          display: false
+                                      },
+                                      gridLines: { display: false, drawBorder: true },
+                                      scaleLabel: {
+                                              display: false
+                                            }
+                                  }]
+                      }
+                  }
+%>

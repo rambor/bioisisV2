@@ -1,0 +1,14 @@
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+
+<div class="alerts" id="alerts">
+</div>
+
+<% if @data_to_plot.is_sec %>
+  <%= render :partial => "view_sec_file" %>
+<% else %>
+  <%= render :partial => "view_dat_file" %>
+<% end %>
+
+<%= link_to "Back", edit_data_set_path(:id => @data_set.experiment.id, :dataset_id => @data_set.id) %></p>

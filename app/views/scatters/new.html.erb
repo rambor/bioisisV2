@@ -1,0 +1,29 @@
+
+<% content_for :right do %>
+  <%= render :partial => "news/right_side_edit_menu" %>
+<% end -%>
+<%= form_with(model: @update, local: true) do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :version %><%= f.text_field :version %>
+  </p>
+  <p>
+    <%= f.label :comments %>
+  </p>
+  <p>
+    <%= f.text_area :comments, "cols" =>80, "rows" =>20 %>
+  </p>
+  <p>
+    Notify users after submission?
+    <%= f.check_box :email_users %>
+  </p>
+  <p>
+    Select new Scatter file (compressed)
+    <%= f.file_field :zip_file %>
+  </p>
+  <%= f.submit %>
+<% end %>

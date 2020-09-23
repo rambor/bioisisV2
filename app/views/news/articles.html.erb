@@ -1,0 +1,47 @@
+<% content_for :right do %>
+  <%= render :partial => "right_side_menu" %>
+<% end -%>
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+<p class="welcometitle">Outstanding Achievements in SAS</p>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @news.each do |news| %>
+    <tr>
+      <td colspan="3" align="left">
+        <span class="grey_text"> <%= nice_date(news.created_at) %> </span> &nbsp;<span class="darkred_text"><%= news.title.upcase %></span>
+
+        <% unless news.journal_info.empty? %>
+          <%= raw RedCloth.new("p(journal). #{news.journal_info}").to_html %>
+          <p>Published <%= nice_date(news.publication_date) %></p>
+        <% end %>
+
+        <%= raw RedCloth.new("p(journal-about). #{news.notes}").to_html %>
+
+        <% if news.figure.attached? %>
+          <%= image_tag news.figure.variant(resize_to_fit: [400, nil])  %>
+        <% end %>
+
+        <% unless news.link.empty? %>
+          <span class="journalText"><%= link_to "Link to Article", news.link, :class => 'no_decor_link' %></span>
+        <% end %>
+        <hr>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <% if can? :update, @news %>
+        <td><%= link_to 'Edit', edit_news_path(news.id) %></td>
+        <td><%= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete %>
+      <% end %>
+      </td>
+
+    </tr>
+  <% end %>
+</table>

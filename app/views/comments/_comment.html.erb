@@ -1,0 +1,1 @@
+<tr id="comment_<%= comment.id %>"><td><%= comment.comment %></td><td><%= link_to "edit", edit_comment_path(:id => comment.id), :remote => true %> | <%= link_to "remove", comment_path(:id =>comment.id), method: :delete, remote: true %></td><td><%= check_box "comment", comment.id, { class: 'comment_box', checked: comment.resolved } %></td></tr>

@@ -1,0 +1,2 @@
+$('#messages').empty();
+$('#view_upload').empty().append("<%= j render partial: "real_space_files/pr_file", :locals => {:data_to_plot => @data_to_plot, :ymin => @ymin, :ymax => @ymax} %>");

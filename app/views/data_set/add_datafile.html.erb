@@ -1,0 +1,50 @@
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+
+<div class="alerts" id="alerts">
+</div>
+
+  <table class="SubmissionDetails">
+    <tr><td><h1 class="submissionH1">NAME (Title)</h1></td><td><%= raw RedCloth.new(@data_set.name).to_html %></td></tr>
+    <tr><td><h1 class="submissionH1">DESCRIPTION</h1></td><td><%= raw RedCloth.new(@data_set.description).to_html %></td></tr>
+    <tr><td><h1 class="submissionH1">INFO ON BACKGROUND/BUFFER</h1></td><td><%= raw RedCloth.new(@data_set.buffer).to_html %></td></tr>
+    <tr><td colspan="2">
+      <div class="files" id="uploaded">
+        <% if @data_set.reciprocal_space_files.size > 0 %>
+          <h1 class="submissionH1">Uploaded files for this dataset</h1>
+        <% end %>
+
+        <table class="UploadedDataFiles" id="uploadedfiletable" width="100%">
+          <tbody>
+          <% @data_set.reciprocal_space_files.each do |rcp| %>
+          <%= render partial: "associated_reciprocal_space_file", :locals => {rcp: rcp, data_set: @data_set} %>
+          <% end %>
+          </tbody>
+        </table>
+
+      </div>
+    </td>
+    </tr>
+    <tr><td><h1 class="submissionH1">SELECT FILE TO UPLOAD</h1><span class="instructions">File can be single *.dat. If data is a SEC-SAXS/SANS, you can upload *.sec or zip file of the set of data.</span></td>
+      <td>
+        <%= form_with model: @data_set, url: upload_data_file_path(@data_set.id) do |f| %>
+          <%= f.fields_for :reciprocal_space_file, @data_set.reciprocal_space_files.new do |ff| %>
+            <%= ff.label "Type of data file" %>
+            <%= ff.select :sas_type, ['subtracted signal', 'unsubtracted background', 'unsubtracted sample', 'unsubtracted SEC SAS']%>
+            <%= ff.label "Select Reciprocal Space data file to upload" %>
+            <%= ff.file_field :file %>
+          <% end %>
+          <p><%= f.submit "Add File To DataSet" %>&nbsp;</p>
+        <% end %>
+    </td></tr>
+  </table>
+
+<div class="view_upload" id="view_upload">
+</div>
+
+<div class="real_space_upload" id="real_space_upload">
+</div>
+
+
+

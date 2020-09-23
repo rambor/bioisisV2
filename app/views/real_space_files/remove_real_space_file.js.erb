@@ -1,0 +1,2 @@
+$('tr#real_space_file_<%= @id_to_remove %>').remove();
+$('tr#file_<%= @rcp.id %>').replaceWith("<%= j render partial: "data_set/associated_reciprocal_space_file", :locals => {rcp: @rcp, data_set: @data_set} %>");

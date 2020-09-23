@@ -1,0 +1,56 @@
+<% content_for :left do %>
+  <%= render :partial => "left_side_review_menu" %>
+<% end -%>
+
+  <table class="SubmissionDetails">
+    <tr><td><h1 class="submissionH1">NAME (Title)</h1></td><td><%= raw RedCloth.new(@data_set.name).to_html %></td></tr>
+    <tr><td><h1 class="submissionH1">DESCRIPTION</h1></td><td><%= raw RedCloth.new(@data_set.description).to_html %></td></tr>
+    <tr><td><h1 class="submissionH1">SOURCE</h1></td><td> <%=  raw RedCloth.new(@data_set.source).to_html %></td></tr>
+    <tr><td><h1 class="submissionH1">INSTRUMENT</h1></td><td> <%=  raw RedCloth.new(@data_set.instrument_name).to_html %></td></tr>
+    <tr><td><h1 class="submissionH1">BACKGROUND/BUFFER</h1></td><td> <%= raw RedCloth.new(@data_set.buffer).to_html %></td></tr>
+
+    <tr><td><h1 class="submissionH1">SAMPLE COMPOSITION</h1></td><td>
+      <table class="SubmissionDetails">
+        <% @data_set.materials.each do |mm| %>
+          <tr><td> <%= mm.material %></td></tr>
+        <% end %>
+      </table>
+    </td></tr>
+  </table>
+
+<div id="add_comment_form">
+</div>
+
+<div id="comments" class="comments">
+  <table id="comments_table">
+    <% if @submission.comments.size > 0 %>
+      <tr><th>Comment</th><th>Resolved?</th></tr>
+      <% @submission.comments.each do |comment| %>
+        <%= render :partial => "comments/comment", locals: { comment: comment }%>
+      <% end %>
+    <% end %>
+  </table>
+</div>
+
+<div class="files" id="uploaded">
+
+  <h1 class="submissionH1"><%= total_associated_files(@data_set) %> uploaded files for this dataset</h1>
+  <table class="UploadedDataFiles" id="uploadedfiletable" width="100%">
+    <tbody>
+    <% @data_set.reciprocal_space_files.each do |rcp| %>
+      <tr id="file_<%= rcp.id %>">
+        <td><%= rcp.file.filename %></td>
+        <td><%= link_to "view", view_data_file_path(:file_id => rcp.id, :dataset_id => @data_set.id), id: "view_#{rcp.id}", class: "view_file", :remote => true %> | <%= link_to "download", rails_blob_path(rcp.file, disposition: 'attachment'), class: "view_file" %></td>
+      </tr>
+      <% unless rcp.real_space_file.nil? %>
+        <tr id="real_space_file_<%= rcp.real_space_file.id %>">
+          <td class="real-space-row">Real-Space file: <%= rcp.real_space_file.file.filename %> </td>
+          <td><%= link_to "view", view_real_space_file_path(:dataset_id => @data_set.id, :file_id => rcp.real_space_file.id), remote: true, id: "view", class: "view_file" %></td>
+        </tr>
+      <% end %>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="view_upload" id="view_upload"></div>

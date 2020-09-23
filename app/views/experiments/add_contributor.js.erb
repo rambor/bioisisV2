@@ -1,0 +1,13 @@
+<% if @success %>
+if ($('#contributor_list tr').length === 0){
+    $('#contributor_list').append('<tbody></tbody>');
+}
+$('#contributor_list >tbody:last-child').append("<%= escape_javascript("#{render :partial => 'added_contributor', :locals => { :con => @contributor }}").html_safe %>");
+
+$('#contributor_last_name').val('');
+$('#contributor_given_names').val('');
+$('#<%= @tr_to_remove %>').remove();
+
+<% else %>
+alert("Name Incomplete, please provide both Last and Given names");
+<% end %>

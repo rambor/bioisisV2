@@ -1,0 +1,4 @@
+<tr id="potential_contributor_<%= count %>">
+  <td><%= con.last_name %>, <%= con.given_names %></td>
+  <td align="right"><%= link_to "click to add as contributor", contributors_path(contributor:{last_name: con.last_name, given_names: con.given_names, experiment_id: con.experiment_id}, tr_to_remove: "potential_contributor_#{count}"), method: :post, remote: true, :id => "potential_#{count}" %></td>
+</tr>

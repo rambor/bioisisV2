@@ -1,0 +1,11 @@
+<% content_for :left do %>
+<%= render :partial => "left_edit_menu" %>
+<% end -%>
+
+<% content_for :right do %>
+  <%= render :partial => "right_edit_menu" %>
+<% end -%>
+
+<p>Deposition ID: <%= @submission.data_directory %> successfully approved</p>
+<p>User at <span class="login"><%= @submission.email %></span> will be notified by email</p>
+<p>Thank you for your time and expertise.</p>

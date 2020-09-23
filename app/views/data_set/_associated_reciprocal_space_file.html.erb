@@ -1,0 +1,13 @@
+<tr id="file_<%= rcp.id %>">
+  <td><%= rcp.file.filename %></td>
+  <td>
+    <%= link_to "(remove)", remove_data_file_path(:dataset_id =>data_set.id, :file_id => rcp.id), data: {confirm: "Are you sure?"}, remote: true, :id => rcp.id, :class => "remove_file" %> | <%= link_to "view", view_data_file_path(:dataset_id => data_set.id, :file_id => rcp.id), id: "view", class: "view_file", remote: true %>
+
+    <% if rcp.real_space_file.nil?  %>
+      | <%= link_to "add real-space-file", add_real_space_file_path(:dataset_id => data_set.id, :reciprocal_space_file_id => rcp.id), id: "add_real_space", class: "add_real_space", remote: true %>
+    <% end %>
+  </td>
+</tr>
+<% unless rcp.real_space_file.nil? %>
+<%= render :partial => "data_set/associated_real_space_file", :locals =>{rcp: rcp, data_set: data_set} %>
+<% end %>

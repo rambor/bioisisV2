@@ -1,0 +1,45 @@
+<div class="welcometitle"><%= "#{@tag.upcase}" %>
+<span class="tutorial_small_text">... by Robert P. Rambo, Ph.D.
+</span>
+</div>
+<p class="about">
+Sc&Aring;tter can process unsubtracted HPLC SEC SAXS data.  For a time series dataset which is incremented in its filename, a single file can be dragged into the lower left panel (Figure 1). Sc&Aring;tter will automatically grab all related files and sort them.  Usually, this will be around 600 to 2000 individual dat files.  For previously analyzed files (or from B21), a single *.sec file can be loaded by dropping in the same lower left panel.</p>
+<p class="about"> To analyze SEC-SAXS data, click on the SEC tab (left menu) and drag an appropriate file to the panel.
+</p>
+<p class="about">Before you begin, it is important to set the output directory where all the subtracted files and images will be stored.  This can be performed using the "Set Output Directory" (Figure 1, blue arrow).
+</p>
+<p class="about"> After dragging a file, please wait a few minutes as Sc&Aring;tter collects and loads the files.  A previously processed *.sec file will load instantly whereas a collection of *.dat files will be processed frame by frame.
+</p>
+
+<p class="about" align="left"><b>Figure 1 |</b></p>
+	<%= image_tag('sec_figure_1.png', :width => '640') %>
+	<p class="about"> Here, I am loading an HPLC run that was collected using 3 second exposures with a total of 620 frames. Loading many files takes time so please wait.  If you are using data collected in nm<sup>-1</sup>, you will need to convert to &Aring;<sup>-1</sup> by checking the "nm<sup>-1</sup> to &Aring;<sup>-1</sup>" box (lower left).
+	</p>	
+<p class="about" align="left"><b>Figure 2 |</b></p>
+	<%= image_tag('sec_figure_2.png', :width => '640') %>
+	<p class="about"> After all files are loaded, the "SAVE AS" field auto-populates but feel free to change the name.  To create the trace of the HPLC run, hit the "TRACE" button (Figure 1, green arrow). This will estimate, roughly, the background and determine a signal from each frame.  The TRACE function also calculates the *.sec file and for every frame above the threshold (1.1 in Figure 1), an auto-Rg is performed.  </p>
+<ul>
+  <li class="red_text">Very weak peaks will need a lower threshold</li>
+  <li class="red_text">q-min and q-max is the range of data used to calculate signal for the trace</li>
+  <li class="red_text">Exclude start points in Auto-Rg should be increased for low concentrations</li>
+  <li class="red_text">Any changes above, TRACE needs to be recalculated</li>
+</ul>
+	<p class="about" align="left"><b>Figure 3 |</b></p>
+		<%= image_tag('sec_figure_3.png', :width => '640') %>
+	<p class="about"> When the trace function finishes, the listed files will clear, a *.sec file will be written to the Output Directory and a chromatogram (cyan) of the HPLC run will be shown.  Frames that were selected as buffer will be colored dark grey. TOTAL frames used as buffers is specified, in this case 167.  </p>
+<p class="about"> The baseline across the entire chromatogram should be consistent, meaning flat and at same level across the peak.  Sometimes, the baseline will be elevated after the peak suggesting capillary fouling (X-ray's deposited material on the window).  This can happen if the SEC-SAXS run was performed with high protein concentrations (>15 mg/ml).  Here, the chromatogram looks good and we will proceed to the next step of peak selection and merging.</p>
+<p class="about" align="left"><b>Figure 4 |</b></p>
+		<%= image_tag('sec_figure_4.png', :width => '640') %>
+
+<p class="about" align="left">Select the peak by clicking the left side of the peak with mouse and while holding down the button, move the mouse to the right and release when highlighting the region of interest. This will load the frames into the right panel (Figure 4). For frames above the threshold, Rg values will be plotted (red circles). The 3 plots on the right correspond to a zoomed region of the selected peak, followed by a similarity plot and finally (at bottom), a single subtracted frame corresponding to the vertical line in the top plot.  </p>
+<p class="about" align="left">The Similarity plot (Figure 4, middle right plot with green and blue arrows) is used to select the range of frames for merging (subtraction).  Frames that are most similar are seen as cyan in the plot.  As we move the mouse cursor over the plot, a cross-hair will move with the mouse.  The vertical line marks the start of the frame to be used (green arrow) and the horizontal line marks the end frame (blue arrow) for the selected range.  To use the range, click the mouse, this will set the range for merging.  Optimally, you should select the triangular region that maximizes cyan.  </p>
+<ul>
+  <li class="red_text">Selected frames are also displayed in the middle (Figure 4, red arrow)</li>
+  <li class="red_text">Left/right cursor moves the displayed subtracted frame in bottom plot </li>
+</ul>
+
+<p class="about" align="left">To merge the frames specified by the range, click MERGE button. Frames will be scaled and merged and loaded into ANALYSIS panel. Also, a pdf of the merged frames will be written to Output Directory. Unchecking merge will write each individual frame, unscaled to file and loaded into ANALYSIS panel.</p>
+
+
+
+	

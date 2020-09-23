@@ -1,0 +1,16 @@
+<fieldset>
+  <legend>Add Contributor:</legend>
+  <%= form_with model: Contributor.new, url: contributors_path(:experiment_id => @experiment.id) do |con_form| %>
+    <div>
+      <%= con_form.label :last_name, "Last Name" %>
+      <%= con_form.text_field :last_name, size:"50" %>
+    </div>
+    <div>
+      <%= con_form.label :given_names, "Given Name(s), e.g., Robert P. or RP " %>
+      <%= con_form.text_field :given_names, size:"50" %>
+    </div>
+    <div class="actions">
+      <%= submit_tag "Add Contributor", type: "button", value:"AddContributor", class: "contributor_button", id: "contributor_button" %>
+    </div>
+  <% end %>
+</fieldset>

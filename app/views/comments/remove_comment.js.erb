@@ -1,0 +1,6 @@
+$('#comment_<%= @remove_id %>').remove();
+
+if ($('#comments_table tr').length === 1) {
+    $('#approval_submit').replaceWith("<%= escape_javascript(render(:partial => "submissions/approval_link", :locals => {:data_directory => @submission_data_directory})) %>");
+    $('#comments_table').empty();
+}

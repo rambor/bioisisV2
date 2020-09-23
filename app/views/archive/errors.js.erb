@@ -1,0 +1,5 @@
+$('#alerts').empty();
+<% @archive.errors.full_messages.each do |x| %>
+$('#alerts').append('<p>Error :: <%= x %></p>');
+$('.upload').append('<div class="alerts"><p>File Uploaded Rejected</p></div>');
+<% end %>

@@ -1,0 +1,8 @@
+$('.alerts').empty();
+$('h2.fileStatus').text("Uploaded");
+
+if ($('#file_list tr').length === 0){
+    $('#file_list').append('<tbody></tbody>');
+}
+
+$('#file_list >tbody:last-child').append("<%= escape_javascript("#{render :partial => 'uploaded_file', :locals => { :archive => @archive }}").html_safe %>");

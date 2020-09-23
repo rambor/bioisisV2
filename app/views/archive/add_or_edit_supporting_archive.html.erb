@@ -1,0 +1,45 @@
+<%= javascript_pack_tag 'file_upload' %>
+<% content_for :left do %>
+  <%= render :partial => "left_side_menu" %>
+<% end -%>
+<div class="alerts" id="alerts">
+</div>
+
+<h1>Supporting Archive File</h1>
+<ul>
+  <li>Archive is only for zip files.</li>
+  <li>Zip file must be < 100 MB in size.</li>
+  <li>Provide a comprehensive description of at least 50 characters.</li>
+  <li>Multiple archives can be added to a submission.</li>
+  <li>Archive should contain supplementary information such as sequence information, chemical information, PDB models, scripts used for modeling or data processing. </li>
+</ul>
+<%= form_with model: @archive, url: @archive.new_record? ? create_archive_path(@experiment.id) : update_archive_path(@archive.id) do |f| %>
+  <table class="BasicDetails">
+    <tr><td><h1 class="submissionH1">DESCRIPTION</h1><span class="instructions">Provide thorough description of the contents of the archive (at least 50 characters).</span></td><td><%= f.text_area :description, "cols" =>50, "rows"=>10 %></td></tr>
+
+    <tr><th colspan="2"><div class="small_white_text">character Count :: <span class="small_white_text" id="charcount">(0)</span></div></th></tr>
+
+    <tr><td><h1 class="submissionH1">ZIP FILE</h1><span class="instructions">Provide a zip file of the files you would like to archive and distribute with the deposit.  </span></td><td><%= f.file_field :zip_file, accept: 'application/zip', multiple: false  %></td></tr>
+  </table>
+  <% if @archive.new_record? %>
+    <%= f.submit  "Create", :style => "display : none;" %>
+    <% else %>
+    <%= f.submit "Update" %>
+  <% end %>
+
+<% end %>
+
+<div class="upload">
+  <div class="progress"><div class="bar" style="width: 0%"></div></div>
+</div>
+
+<hr>
+
+  <h4>Associated Archive Files</h4>
+  <table class="UploadedDataFiles" id="uploadedfiletable">
+    <% if @experiment.archives.size > 0 %>
+    <% @experiment.archives.each do |archive| %>
+      <tr id="archive_<%= archive.id %>"><td><%= archive.zip_file.filename %></td><td><%= link_to "view(edit)", "", class: "view_file" %> | <%= link_to "remove", remove_archive_path(:id => archive.id), data: {confirm: "Are you sure?"}, :class => "remove_file" %></td></tr>
+    <% end %>
+    <% end %>
+  </table>

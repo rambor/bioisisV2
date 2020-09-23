@@ -1,0 +1,50 @@
+<%= scatter_chart data_to_plot.data,
+                  xtitle: "q-vector",
+                  ytitle: "log\u2081\u2080 I(q)",
+                  width: "300px",
+                  height: "300px",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 1
+                  },
+                  library: {
+                      tooltips: {enabled: false},
+                      title: {
+                          display: true,
+                          text: "Log\u2081\u2080 Plot",
+                          fontStyle: 'bold',
+                          fontSize: '14'
+                      },
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'linear',
+                                      gridLines: { display: true, drawBorder: true, drawTicks: false },
+                                      ticks: {
+                                          display: false,
+                                          max: data_to_plot.xmax
+                                      },
+                                      scaleLabel: {
+                                          display: true,
+                                          fontSize: '12'
+                                      }
+
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          display: false
+                                      },
+                                      gridLines: { display: true, drawBorder: true, drawTicks: false, drawOnChartArea: false },
+                                      scaleLabel: {
+                                          display: true,
+                                          fontSize: '12'
+                                      }
+                                  }]
+                      }
+                  }
+%>

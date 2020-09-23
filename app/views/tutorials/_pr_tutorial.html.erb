@@ -1,0 +1,54 @@
+<div class="welcometitle"><%= "#{@tag.upcase}" %>
+<span class="tutorial_small_text">... by Robert P. Rambo, Ph.D.
+</span>
+</div>
+
+<p class="about">
+  The inverse Fourier transform of SAXS data produces a real-space representation of the measurement. This is often achieved using the indirect Fourier transform (IFT) method where a suitable basis function (e.g., sine series, cubic splines) is used to provide a stable solution. Furthermore, IFT may require additional stabilization through a process called regularization.  Regularization imposes an expectation on the real-space representation such as smoothness or positivity.
+</p>
+
+<p class="about">
+SC&Aring;TTER provides SPI (direct inverse transform), Moore method<sup>1</sup>, L2-norm, Legendre and L1-norm methods for IFT.  Each method has its strengths and weaknesses. Legendre works well for highly elongated particles.  SPI is the least biased approach but will not work well for noisy data.  Moore method is very robust. Algorithms can be arranged in order of increasing bias with SPI < L1-norm < Moore < Legendre < L2-norm.  The L2-norm is akin to the method implemented in GNOM.  L1-norm minimizes on the sum of absolute values and the L2-norm minimizes on the sum of squared values.  The sums are either the coefficients of a function or second derivatives of the P(r) distribution.
+</p>
+<ul>
+  <li class="red_text">Do not expect the measured q-range to be entirely transformable</li>
+  <li class="red_text">q-min should be determined through refining the Guinier region</li>
+  <li class="red_text">q-max of the detector does not imply a signal was measured to the limit</li>
+</ul>
+
+
+<p class="about" align="left">Using default parameters, load a dataset in "Analysis" tab. Here, I am using the dataset labeled SRNA_2.dat (Figure 1). SRNA_2.dat is a particularly difficult dataset, it is a mixture of RNA species, including misfolded RNAs produced during the refolding step. </p><p class="about" align="left">Make sure the Guinier parameters have been determined using either "Guinier Rg" or "Auto Rg" buttons. It is critical that Guinier region (low-q) has been trimmed. Now, click on the "P(r)" tab on left menu. Also, during the P(r)-determination, I suggest plotting the data as q vs. q*I(q) as this representation of the SAXS data illustrates the presence of negative intensities.  A well measured SAXS curve at high-q will have few negative values.  </p>
+<p class="about" align="left"><b>Figure 1 |</b></p>
+	<%= image_tag('pr_figure_1.png', :width => '650') %>
+<p class="about" align="left">Switching to P(r)-tab runs a preliminary fit using the d-max specified in the "Settings" tab (Figure 7). We are seeking a P(r) distribution that is smooth (few sharp wiggles). Here (left panel), the P(r)-distribution but does not smoothly finish at d-max.  It would appear that the d-max is too small.  We can increase d-max (Figure 1, green arrow) by clicking on 87 in d-max column and increasing the value.  The quality of the model-data agreement, including our expectations is given by the Score.  We seek the lowest score possible for a given model.  Scores should not be compared across models (i.e., SPI vs L1-norm vs Moore, etc).
+</p>
+
+	<p class="about" align="left"><b>Figure 2 |</b></p>
+		<%= image_tag('pr_figure_2.png', :width => '650') %>
+	<p class="about" align="left">
+	By increasing d-max I find that the lowest score occurs at d-max of 108.5. The distribution looks smooth and has a nice finish at d-max.  The right panel shows the SAXS data plotted as q*I(q) vs q.  We see that all points at high q are greater than 0.  </p>
+<p class="about" align="left"><b>Figure 3 |</b></p>
+	<%= image_tag('pr_figure_3.png', :width => '650') %>
+
+<p class="about" align="left"> We can further test the robustness of the model by hitting the Refine button (right).  This will divide the data into a set of bins (Shannon bins) and sample from each bin, performing inverse transform and testing how well the model explains the un-sampled data akin to cross validation. Here, we find two points that were rejected (> 2.5 standard deviations) from model fit.  The score increased slightly from 1.254 to 1.255 suggesting a good choice of d-max. However, for this particular dataset choice of d-max seems broad as increasing d-max to 118 increases the score slightly.  This can be expected for datasets that are of mixtures, since the RNA is partially unfolded, it is a mixture of varying conformational states.</p>
+<p class="about" align="left"><b>Figure 4 |</b></p>
+	<%= image_tag('pr_figure_4.png', :width => '650') %>
+<p class="about">We can test and compare a range of d-max values using the "Find DMAX" function. Select/highlight the dataset with the mouse and right click, this will bring up the "Find DMAX" drop down (Figure 4).  Select.</p>
+<p class="about" align="left"><b>Figure 5 |</b></p>
+	<%= image_tag('pr_figure_5.png', :width => '650') %>
+<p class="about">A new window will open (Figure 5) which shows a graph with suggested q-max (red vertical line). To compare with results above, set q-max to 0.32. The range of d-max values is fine for this sample, but you may want to adjust this for larger particles.  The wider the range, the longer the search.  So, click start and a search will be performed... takes a few minutes.</p>
+<p class="about" align="left"><b>Figure 6 |</b></p>
+	<%= image_tag('pr_figure_6.png', :width => '650') %>
+<p class="about">The search tries a variety of alpha values, dmax values for the given model.  We see for the Moore model a suggested dmax of 115. The likelihood score shows a single defined peak suggesting a good model-data agreement.  If the data suffers from background substraction issues, aggregation or is a severe mixture, the likelihood peak will be broad and not symmetric.  This is a good indicator of sample/data quality.  </p>
+
+<p class="about">To commit the model, type 115.5 into the dmax column in the P(r)-tab and hit enter.</p>
+
+
+<p class="about" align="left">The refinement method described above is a Shannon-limited sampling method that minimizes on the median residual for fitting (refinement). The parameters for the sampling method are in the "Settings" tab. The strength of the regularization is controlled by alpha. Noisy datasets can be transformed by increasing C.  C (default 2) effectively increases the number of points that are used to evaluate smoothness. As a comparison, GNOM uses ~101 equally spaced data points to evaluate smoothness. Most datasets require about 2000 "pr_refinement rounds" (Figure 1). The "pr_refinement rounds" represent the number of fits and sub-samplings used during the P(r) determination. Noisy datasets will require 3,000 to 4,000 rounds. During the sub-sampling, we are effectively searching parameter space and can use the search to determine which subset of the data best explains the entire dataset. This is possible since SAXS datasets are highly over-sampled (see <%= link_to "Rambo and Tainer Nature 496, 477-481 2013", "http://www.nature.com/nature/journal/v496/n7446/full/nature12070.html", :class=>'no_decor_link' %>). The cut-off for the selection is set by the "rejection cut-off" and essentially acts as a standard deviation cut-off meaning data points with standardized residuals that sit outside the cut-off are rejected from the final fit.</p>
+
+<p class="about" align="left">The P(r)-distribution is being modeled using an Indirect Fourier Transform (IFT) method that includes choice of basis function, inclusion of a constant background term and type of regularization.  Constant background term may help for data that is measured near the limit-of-detection as the scattering tends to flatten in the subtraction.  In these cases, its best to trim back the q-max as much as possible to minimize artefacts.  </p>
+
+<p class="about">A poor quality buffer subtraction will make the P(r) determination difficult. If you are having problems determining a dmax, try truncating the data to a lower resolution.</p>		
+<span class="tutorial_small_text">
+1. <I>Moore, P.B. Journal of Applied Crystallography. 1980 13:168-175</I>
+</span>

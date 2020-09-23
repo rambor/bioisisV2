@@ -1,0 +1,13 @@
+<%= form_with(url: complete_submission_path(:submission_id => @submission.id, :experiment_id => @experiment.id)) do |form| %>
+  <p>You can create your own BioISIS Id (BID) to reference for publication.  The BID code is a six (6) letter and number combination such as SAMR11. </p>
+  <div class="actions" id="submission_release">
+    <%= form.label "BioISIS ID" %>
+    <%= form.text_field :bioisis_id, :size => '8', :value => @experiment.bioisis_id %>
+    <p>Data will be automatically released after the release date pending reviewing</p>
+    <%= form.label "Release Date" %>
+    <%= form.text_field :release_date, placeholder: "pick a date", data: {behavior: "flatpickr"} %>
+    <%= form.submit "SUBMIT", data: {confirm: "This will complete submission, are you sure?"} %>
+  </div>
+  <div class="bid_search_result">
+  </div>
+<% end %>

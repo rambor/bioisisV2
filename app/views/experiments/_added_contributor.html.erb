@@ -1,0 +1,4 @@
+<tr id="contributor_<%= con.id %>">
+  <td><%= con.last_name %>, <%= con.given_names %></td>
+  <td align="right"><%= link_to "remove", remove_contributor_path(:id => con.id), data: {confirm: "Are you sure?"}, remote: true, :id => "remove" %></td>
+</tr>

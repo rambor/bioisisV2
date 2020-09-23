@@ -1,0 +1,47 @@
+<%= form_with(model: news, local: true) do |f| %>
+  <% if news.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(news.errors.count, "error") %> prohibited this news from being saved:</h2>
+
+      <ul>
+        <% news.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p><%= f.label :category %>
+    <%= select(:news, :category, options_for_select([['Review','review'],['Journal Article','article'],['updates','updates'],['General Information','general']]))%>
+  </p>
+  <p>
+    <%= f.label :journal_info %>
+    <%= f.text_area :journal_info, "cols" =>80, "rows" =>7 %>
+  </p>
+  <p>
+    <%= f.label :abstract %>
+    <%= f.text_area :abstract, "cols" =>80, "rows" =>20 %>
+  </p>
+  <p>
+    <%= f.label :link %><%= f.text_field :link %>
+  </p>
+  <p>
+    <%= f.label :figure %>
+    <%= f.file_field :figure %>
+  </p>
+  <p>
+    <%= f.label "Publication Date (use for hall of fame)" %>
+    <%= f.date_select :publication_date %>
+  </p>
+  <p>
+    <%= f.label "Notes (use for General Info and Updates)" %>
+  </p>
+  <p>
+    <%= f.text_area :notes, "cols" =>80, "rows" =>20 %>
+  </p>
+  <%= f.submit %>
+<% end %>

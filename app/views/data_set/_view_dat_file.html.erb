@@ -1,0 +1,66 @@
+
+<%= scatter_chart @data_to_plot.xy_data,
+                  xtitle: "q-value",
+                  ytitle: "intensity",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 5
+                  },
+                  library: {
+                      tooltips: {enabled: false},
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'linear',
+                                      gridLines: {
+                                          color: "black",
+                                          borderDash:[2,5],
+                                      }
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          max: @ymax,
+                                          min: @ymin,
+                                          stepSize: 1
+                                      }
+                                  }]
+                      }
+                  }
+%>
+
+<%= scatter_chart @data_to_plot.xy_log_data,
+                  xtitle: "q-value",
+                  ytitle: "log 10 intensity",
+                  dataset: {
+                      borderWidth: 1,
+                      fill: false,
+                      borderColor: "orange",
+                      backgroundColor: "transparent",
+                      pointBorderColor: "rgb(99,207,254)",
+                      pointBackgroundColor: 'rgba(255,255,255,0.5)',
+                      pointRadius: 5
+                  },
+                  library: {
+                      scales: {
+                          xAxes: [{
+                                      id:'x-axis',
+                                      type: 'logarithmic',
+                                      gridLines: {
+                                          color: "black",
+                                          borderDash:[2,5],
+                                      }
+                                  }],
+                          yAxes: [{
+                                      ticks: {
+                                          max: @ymax_log,
+                                          min: @ymin_log
+                                      }
+                                  }]
+                      }
+                  }
+%>
