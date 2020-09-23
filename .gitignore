@@ -33,6 +33,15 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Mac finder artifacts
+.DS_Store
+
+# RubyMine project files
+.idea
+
+# Textmate project files
+/*.tmproj
+
 /public/packs
 /public/packs-test
 /node_modules
