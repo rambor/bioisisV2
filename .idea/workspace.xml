@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cdfb5c8-677c-484e-acbf-cc86caf25c15" name="Default" comment="">
+    <list default="true" id="5cdfb5c8-677c-484e-acbf-cc86caf25c15" name="Default" comment="removed config file">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/setup_mail.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +186,10 @@
       <command value="rake db:migrate" />
       <command value="rake db:seed" />
       <command value="rails db:reset db:migrate" />
+      <command value="git reset --soft HEAD~1" />
+      <command value="git reset --soft HEAD^" />
+      <command value="git rm config/initializers/setup_mail.rb" />
+      <command value="git commit --amend" />
     </option>
   </component>
   <component name="RunManager" selected="Rails.Development: bioisisV2">
@@ -438,12 +443,26 @@
       <workItem from="1600280975893" duration="23474000" />
       <workItem from="1600425216012" duration="66188000" />
       <workItem from="1600758947714" duration="8972000" />
-      <workItem from="1600774309565" duration="6619000" />
+      <workItem from="1600774309565" duration="7456000" />
+      <workItem from="1600851776283" duration="209000" />
+      <workItem from="1600855690501" duration="337000" />
     </task>
+    <task id="LOCAL-00001" summary="removed config file">
+      <created>1600850653675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600850653675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed config file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598572604494">
@@ -455,9 +474,10 @@
     <state x="-1824" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.841/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1596019060571" />
     <state x="414" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.841@0.23.1440.841" timestamp="1592779277689" />
     <state x="414" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.848@0.23.1440.848" timestamp="1597627449918" />
-    <state x="299" y="23" width="825" height="840" key="CommitChangelistDialog2" timestamp="1595204855251">
-      <screen x="0" y="23" width="1440" height="840" />
+    <state x="-2028" y="-180" width="825" height="840" key="CommitChangelistDialog2" timestamp="1600850653412">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
     </state>
+    <state x="-2028" y="-180" key="CommitChangelistDialog2/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850653412" />
     <state x="299" y="23" width="825" height="840" key="CommitChangelistDialog2/0.23.1440.840@0.23.1440.840" timestamp="1595204855251" />
     <state x="578" y="304" key="Github.ShareDialog" timestamp="1600819163487">
       <screen x="0" y="23" width="1440" height="838" />
@@ -1011,6 +1031,10 @@
       <screen x="0" y="23" width="1440" height="842" />
     </state>
     <state width="233" height="457" key="HiddenNamespacesPopup/0.23.1440.842@0.23.1440.842" timestamp="1595512677923" />
+    <state x="-1254" y="78" key="Vcs.Push.Dialog.v2" timestamp="1600850657333">
+      <screen x="-2560" y="-180" width="2560" height="1417" />
+    </state>
+    <state x="-1254" y="78" key="Vcs.Push.Dialog.v2/0.23.1440.835/-2560.-180.2560.1417@-2560.-180.2560.1417" timestamp="1600850657333" />
     <state x="1525" y="47" width="1264" height="744" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600088562343">
       <screen x="0" y="23" width="1440" height="839" />
     </state>
