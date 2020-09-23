@@ -33,7 +33,7 @@
 
       <th colspan="2" align="left">
         <table class="RightMenu_Details">
-          <tr><td>BIOISIS ID ::  <%= link_to experiment.bioisis_id, experiment_path(experiment.id)  %></td></tr>
+          <tr><td>BIOISIS ID ::  <%= link_to experiment.bioisis_id, experiment_path(experiment.id), class:"bioisis-link" %></td></tr>
 
           <% if experiment.publications.size >0 %>
             <%= render  :partial => "has_publication", locals: {pub: experiment.publications[0]} %>

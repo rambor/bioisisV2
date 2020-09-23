@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_09_17_143450) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -79,7 +82,7 @@ ActiveRecord::Schema.define(version: 2020_09_17_143450) do
 
   create_table "experiments", force: :cascade do |t|
     t.text "description", null: false
-    t.text "title", limit: 200, null: false
+    t.text "title", null: false
     t.boolean "status", default: false, null: false
     t.text "publication"
     t.string "publication_doi"

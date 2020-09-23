@@ -309,3 +309,29 @@ table.DataPlots {
   border: none !important;
   background: #ffffff;
 }
+
+
+a.bioisis-link {
+  background-color: white;
+  color: #1ba876 !important;
+  font-weight: bold;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.bioisis-link:visited {
+  color: #1ba876 !important;
+}
+
+a.bioisis-link:hover {
+  background-color: white;
+  color: #6A5ACD !important;
+  text-decoration: underline;
+}
+
+a.bioisis-link:active {
+  color: #1ba876 !important;
+}
+
+
