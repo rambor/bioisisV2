@@ -85,8 +85,9 @@ class NewsController < ApplicationController
 
   def updates
     @pagy, @news = pagy(News.order(:created_at => :desc).where("category LIKE '%updates%'"))
+    puts "total news #{@news.size}"
     respond_to do |format|
-      format.html
+      format.html {render :general_info}
     end
   end
 

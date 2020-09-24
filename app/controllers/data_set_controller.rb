@@ -1,4 +1,5 @@
 class DataSetController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_data_set, only: [:edit, :get_data_to_plot, :view_data_file, :remove_file, :add_real_space_file]
 
   def add

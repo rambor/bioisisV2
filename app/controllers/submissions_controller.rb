@@ -13,6 +13,7 @@ class SubmissionsController < ApplicationController
   # GET /submissions/1
   # GET /submissions/1.json
   def show
+    authorize! :manage, @submissions
   end
 
   # GET /submissions/new
@@ -145,10 +146,10 @@ class SubmissionsController < ApplicationController
     # experiments that are not approved but completed
     # experiments.approved = false
     # experiments.status = 0
-    # submission.status = 1
+    # submission.status =
     #
     #@pagy, @submissions = pagy(Submission.where(:status => 1), items:10)
-    @pagy, @submissions = pagy(Submission.where(:status => 1, experiment: Experiment.where(["status = ? and approved = ?", 0, 0])).includes(:experiment), items:10)
+    @pagy, @submissions = pagy(Submission.where(:status => true, experiment: Experiment.where(["status = ? and approved = ?", false, false])).includes(:experiment), items:10)
     authorize! :manage, @submissions
     respond_to do |format|
       format.html # index.html.erb
