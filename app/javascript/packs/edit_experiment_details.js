@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import { hello } from './hello';
 
 $(function(){
     // always pass csrf tokens on ajax calls

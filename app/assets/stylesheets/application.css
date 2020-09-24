@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "~flatpickr";
+@import "~flatpickr/dist/flatpickr.css";
 body{
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
     font-size: 12pt;
