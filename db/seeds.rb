@@ -72,11 +72,11 @@ Role.create(role: 'Author')
 # validates :country, :presence => true
 # validates :last_name, :presence => true
 # validates :first_name, :presence => true
-
+puts "Creating Role "
 user = User.create(last_name: "Rambo", first_name: "Robert", country: "UK", city: "Didcot", email: "robert_p_rambo@hotmail.com", mailing_list: false, password:"123456789", password_confirmation: "123456789")
 user.roles << Role.find_by(:id => 1)
+puts "Role created #{role.first_name} #{role.last_name}"
 # news update story
-
 #
 Material.create(material: 'protein')
 Material.create(material: 'RNA')
