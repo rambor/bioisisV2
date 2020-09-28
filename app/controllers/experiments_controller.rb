@@ -4,7 +4,7 @@ class ExperimentsController < ApplicationController
   # GET /experiments.json
   def index
     @title = "Most Recent"
-    @pagy, @experiments = pagy(Experiment.where(approved: true).order(created_at: :desc))
+    @pagy, @experiments = pagy(Experiment.where(approved: true).order(created_at: :desc).limit(20))
   end
 
   # GET /experiments/1
