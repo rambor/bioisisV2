@@ -470,7 +470,6 @@ if Dir.exist?(saxs_data_dir)
 
           if zipfiles.size == 1 && File.exists?("#{zipfiles[0]}")
             filename = zipfiles[0]
-
             archive = Archive.new(:description => "Files from original BioISIS deposit containing original dat files, models and images")
             archive.zip_file.attach(io: File.open("#{filename}"), filename: File.basename(filename))
             archive.experiment = submission.experiment
