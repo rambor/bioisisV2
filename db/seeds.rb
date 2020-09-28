@@ -462,7 +462,19 @@ if Dir.exist?(saxs_data_dir)
               image = "#{saxs_data_dir}/SAXS-default.png"
               submission.experiment.figure.attach(io: File.open(image), filename: "figure.png")
             end
+          end
 
+          zipfiles = Dir["#{saxs_data_dir}/#{subdirectory}/*.zip"]
+
+          if zipfiles.size == 1 && File.exists?("#{zipfiles[0]}")
+            filename = zipfiles[0]
+
+            archive = Archive.new(:description => "Files from original BioISIS deposit containing original dat files, models and images")
+            archive.zip_file.attach(io: File.open("#{filename}"), filename: File.basename(filename))
+            archive.experiment = submission.experiment
+            archive.save
+          else
+            puts "No ARCHIVE FOUND IN #{saxs_data_dir}/#{subdirectory}"
           end
 
           # submission.status = true # true means completed, false means pending
