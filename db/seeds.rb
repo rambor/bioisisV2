@@ -371,6 +371,18 @@ if Dir.exist?(saxs_data_dir)
 
           if File.exists? iofq
             # check if 3 column, if so, use it otherwise, make temp file with 3 columns
+            #
+            # fileToread = File.open(iofq)
+            # ff = fileToread.readlines.map(&:chomp)
+            # File.open("temp.txt", "w+") do |f|
+            #   ff.each do |element|
+            #     if element.size > 0
+            #       f.puts(element)
+            #     end
+            #   end
+            # end
+            # fileToread.close
+            #
             if has3ColumnsData(iofq)
 
               #submission.experiment.data_sets[0].reciprocal_space_files << ReciprocalSpaceFile.new(sas_type: "subtracted")
