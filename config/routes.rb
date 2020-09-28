@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'experiments/by_material/:id', :to => 'experiments#by_material', :as => :experiments_by_material
   resources :experiments
   get 'welcome/index'
+  get 'welcome/code_search/', :to => 'welcome#code_search', :as => :bid_search
 
   get 'data_set/add/:id', :to => 'data_set#add', :as => :add_data_set
   get 'data_set/edit/:id', :to => 'data_set#edit', :as => :edit_data_set
