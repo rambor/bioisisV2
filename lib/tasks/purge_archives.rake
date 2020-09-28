@@ -11,9 +11,9 @@ task :purge_archives do
         puts "#{subdirectory} #{Rails.env.production?} D #{Rails.env.development?}"
         if Rails.env.production?
           #FileUtils.remove_file(zipfiles[0])
-          "zip file exist to remove #{zipfiles[0]}"
+          puts "zip file exist to remove #{zipfiles[0]}"
         elsif Rails.env.development?
-
+          puts "zip file exists and will not be removed #{zipfiles[0]}"
         end
       end
     end
