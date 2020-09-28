@@ -93,6 +93,8 @@ Material.create(material: 'polymer')
 Material.create(material: 'diblock copolymer')
 Material.create(material: 'other')
 
+News.create(user_id: user.id, title: "BioISIS is back!", notes: "BioISIS has been down since January 2020 due to end of life of our server. We decided it was a good time to re-evaluate the scope of BioISIS and rebuild the database. BioISIS was originally designed for bioSAXS experiments which we feel is now too limited in scope. The database will now host any type of soft-matter SAXS/SANS datasets that can be uploaded in a 3 column format. It is more important for us to collect experimental SAS data for future analysis rather than hold the plethora of models that may be generated from bioSAXS datasets. Furthermore, any models or additional information generated from the analysis of SAS data can be simply zipped and uploaded to bioISIS with a suitable description of the contents. This will help preserve the data and intent of the experimenter.", category: "updates", publication_date: Date.today)
+
 # load existing data
 # look in directory and see if BID was issued in summary.txt
 # if so, test that iofq files are correct format, 3 columns, if not, add third column
