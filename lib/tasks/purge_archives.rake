@@ -8,10 +8,13 @@ task :purge_archives do
     entries.each do |subdirectory|
       zipfiles = Dir["#{saxs_data_dir}/#{subdirectory}/*.zip"]
       if zipfiles.size == 1 && File.exists?(zipfiles[0])
-        puts "zip file exists #{zipfiles[0]}"
+        puts "#{subdirectory} #{Rails.env.production?} D #{Rails.env.development?}"
+        if Rails.env.production?
+          #FileUtils.remove_file(zipfiles[0])
+          "zip file exist to remove #{zipfiles[0]}"
+        elsif Rails.env.development?
 
-        puts "P #{Rails.env.production?} D #{Rails.env.development?}"
-        #FileUtils.remove_file(zipfiles[0])
+        end
       end
     end
   end
