@@ -224,14 +224,14 @@ class SubmissionsController < ApplicationController
     # Create data directory
     #
     @submission.data_directory = Time.now.to_i.to_s
-    directory = Rails.root.join("public", "BIDRECORDS", @submission.data_directory)
+    #directory = Rails.root.join("public", "BIDRECORDS", @submission.data_directory)
     @submission.editing_count = 1
-    Dir.mkdir(directory)
+    #Dir.mkdir(directory)
     #
     # Write out blank Summary file
     #
     respond_to do |format|
-      if File.directory?(directory) && @submission.save
+      if @submission.save
         #
         # Send email link
         #
