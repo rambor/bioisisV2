@@ -1,5 +1,5 @@
 import $ from "jquery";
-require("flatpickr/dist/flatpickr.css");
+
 
 $(function(){
     // always pass csrf tokens on ajax calls
