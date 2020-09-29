@@ -11,7 +11,7 @@ Total users: <%= @users_size %>
 <table width="100%" class="users">
   <tr><th>User</th><th>Name(s)</th><th>Last Sign In</th><th>Scatter</th></tr>
   <% @users.each do |user| %>
-    <tr><td>( <%= link_to "destroy", destroy_user_path(user), :id=>"user" %> ) <%= link_to user.email, edit_user_path(user), :id => "edit_user" %></td><td><%= user.last_name %>, <%= user.first_name %></td><td><%= nice_date(user.last_sign_in_at) %></td><td><%= total_downloads(user.id) %></td></tr>
+    <tr><td>( <%= link_to "destroy", destroy_user_path(user), :id=>"user" %> ) <%= link_to user.email, edit_user_path(user), :id => "edit_user" %></td><td><%= user.last_name %>, <%= user.first_name %></td><td><%= user.last_sign_in_at.nil? ? "NC" : nice_date(user.last_sign_in_at) %></td><td><%= total_downloads(user.id) %></td></tr>
     <% count += 1 %>
   <% end %>
   <tr><th colspan="4" class="specalt"><%== pagy_nav(@pagy) %></th></tr>
