@@ -15,7 +15,7 @@ class UserAdminController < ApplicationController
     permitted = params.permit(:id)
     @user = User.find_by_id(permitted[:id])
     authorize! :manage, @user
-    if @user.destroy
+    if @user.id > 1 && @user.destroy
       redirect_to :action =>'index'
     end
   end
