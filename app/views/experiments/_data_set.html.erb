@@ -1,18 +1,19 @@
 
-<p>
   <h1 class="ExperimentalDetails">
   <strong>Data Set:</strong>
   <%= raw RedCloth.new(data_set.name).to_html %>
   </h1>
-</p>
+
 <p>
   <strong>Description:</strong>
-  <%= raw RedCloth.new(data_set.description).to_html %>
 </p>
+  <%= raw RedCloth.new(data_set.description).to_html %>
+
 <p>
   <strong>Buffer (Matrix):</strong>
-  <%= raw RedCloth.new(data_set.buffer).to_html %>
 </p>
+  <%= raw RedCloth.new(data_set.buffer).to_html %>
+
 <p>
   <strong>Source:</strong>
   <%= data_set.source %>
