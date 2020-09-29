@@ -23,9 +23,7 @@
         <div class="about"><%= raw RedCloth.new("#{news.notes}").to_html %></div>
 
 
-
-
-        <% if !news.link.empty? %>
+        <% unless news.link.nil? %>
           <span class="journalText"><%= link_to "Link to ...", news.link, :class => "no_decor_link" %></span>
         <% end %>
         <hr>
