@@ -1,3 +1,5 @@
+<%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
 <%= form_with(url: complete_submission_path(:submission_id => @submission.id, :experiment_id => @experiment.id)) do |form| %>
   <p>You can create your own BioISIS Id (BID) to reference for publication.  The BID code is a six (6) letter and number combination such as SAMR11. </p>
   <div class="actions" id="submission_release">
