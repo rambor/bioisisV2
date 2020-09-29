@@ -17,7 +17,7 @@
     <tr>
       <th colspan="3" align="left">
         <span class="grey_text"> <%= nice_date(news.created_at) %> </span> &nbsp;<span class="darkred_text"><%= news.title.upcase %></span>
-        <% unless news.journal_info.empty? %>
+        <% unless news.journal_info.nil? %>
           <span class="journalText"><%= raw RedCloth.new(news.journal_info).to_html %></span>
         <% end %>
         <div class="about"><%= raw RedCloth.new("#{news.notes}").to_html %></div>
