@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label "Status of Deposit" %>
-    <%= form.select :state, options_for_select(@status_of, 1) %>
+    <%= form.select :state, options_for_select(@status_of, @index) %>
     <p>(Deposits may be calibration standards or other results that are not published but available for analysis)</p>
   </div>
 

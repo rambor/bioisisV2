@@ -107,10 +107,24 @@ class ExperimentsController < ApplicationController
   def edit
     # set experiment before_action loads @experiment
     @experiment = Experiment.find_by(:id => params[:id])
-    @status_of = [['unpublished', 'unpublished'], ['thesis', 'thesis'],['journal','journal']]
+
+    @status_of = [['published', 'published'], ['unpublished', 'unpublished'], ['thesis', 'thesis'],['journal','journal'], ['book', 'book']]
     @total_rows = (!@experiment.description.nil? && @experiment.description.size > 140) ? (@experiment.description.size/74.0).ceil : 6
+    @index = 1
+
     if @experiment.publications.size == 0
       @experiment.publications << Publication.new
+    else
+      pub_state = @experiment.state
+      if pub_state == 'thesis'
+        @index = 2
+      elsif pub_state == 'journal'
+        @index = 3
+      elsif pub_state == 'book'
+        @index = 4
+      elsif pub_state == 'published'
+        @index = 0
+      end
     end
   end
 
