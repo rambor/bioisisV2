@@ -255,7 +255,7 @@ class ExperimentsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def experiment_params
-    params.require(:experiment).permit(:description, :title, :state, :publication, :publication_doi, publications_attributes: [:id, :container_title, :title, :volume, :issue, :page, :year, :month])
+    params.require(:experiment).permit(:description, :title, :state, :publication, :publication_doi, publications_attributes: [:id, :container_title, :title, :volume, :issue, :page, :year, :month, :url])
   end
 
   def getMonth(month_string)
