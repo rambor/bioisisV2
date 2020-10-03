@@ -15,11 +15,11 @@
 </p>
 <%= form_with model: @data_set, url: @data_set.new_record? ? create_data_set_path(:id => @experiment.id) : update_data_set_path(@data_set.id) do |f| %>
   <table class="SubmissionDetails">
-    <tr><td><h1 class="submissionH1">NAME (Title)</h1><span class="instructions">Provide concise summary of the dataset</span></td><td><%= f.text_field :name, size: 47 %></td></tr>
-    <tr><td><h1 class="submissionH1">DESCRIPTION</h1><span class="instructions">Provide a summary describing dataset include sample concentrations, molecular masses, etc. Indicate if the sample was flowing, type of column used and flow-rates.</span></td><td><%= f.text_area :description, "cols" =>47, "rows" => 4 %></td></tr>
+    <tr><td><h1 class="submissionH1">NAME (Title)</h1><span class="instructions">Concise statement of the dataset such as <italics>"Batch mode experiments of BSA in low salt"</italics></span></td><td><%= f.text_field :name, size: 47 %></td></tr>
     <tr><td><h1 class="submissionH1">SOURCE</h1><span class="instructions">Select from list</span></td><td> <%= f.select :source, ['synchrotron', 'home source', 'home and synchrotron', 'spallation', 'reactor', 'XFEL']%></td></tr>
     <tr><td><h1 class="submissionH1">INSTRUMENT</h1><span class="instructions">For synchrotron sources provide name as "beamline source" such as "B21 Diamond Light Source" or instrument e.g., SAXSLab XEUSS</span></td><td> <%= f.text_field :instrument_name, size: 47 %></td></tr>
     <tr><td><h1 class="submissionH1">BACKGROUND/BUFFER</h1><p><span class="instructions">Please be specific and detailed such as <I>10 mM TRIS pH 8.0 with 5 mM DTT and 1% sucrose</I>.  If background is water, specify water. </span></p></td><td> <%= f.text_area :buffer, "cols" =>47 %></td></tr>
+    <tr><td><h1 class="submissionH1">DESCRIPTION</h1><span class="instructions">Summary describing dataset include sample concentrations, molecular masses, etc. Indicate if the sample was flowing, type of column used and flow-rates.</span></td><td><%= f.text_area :description, "cols" =>47, "rows" => 4 %></td></tr>
     <tr><td><h1 class="submissionH1">SAMPLE COMPOSITION</h1><span class="instructions">Select all that apply. </span></td><td> </td></tr>
     <%= f.collection_check_boxes :material_ids, Material.all, :id, :material do |b| %>
        <tr><td align="right"><%= b.label %></td><td> <%= b.check_box %></td></tr>
